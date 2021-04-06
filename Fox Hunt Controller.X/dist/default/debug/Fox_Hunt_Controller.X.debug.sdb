@@ -1,0 +1,595 @@
+[p GLOBOPT AUTOSTATIC IEEE_FLT IEEE_DBL LFSROK EMI_WORD ]
+[d version 1.1 ]
+[d edition pro ]
+[d chip 18F27K42 ]
+[d frameptr 16353 ]
+"4 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fleq.c
+[v ___fleq __fleq `(b  1 e 0 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\float.c
+[v ___ftpack __ftpack `(f  1 e 4 0 ]
+"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+"86 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftadd.c
+[v ___ftadd __ftadd `(f  1 e 4 0 ]
+"54 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 4 0 ]
+"62 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 4 0 ]
+"19 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\ftsub.c
+[v ___ftsub __ftsub `(f  1 e 4 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+"245
+[v ___flsub __flsub `(d  1 e 4 0 ]
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+"15 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
+"91 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\Umul64.c
+[v ___omul __omul `(uo  1 e 8 0 ]
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+"10 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\cw.c
+[v _initialize_cw initialize_cw `(v  1 e 1 0 ]
+"26
+[v _deinitialize_cw deinitialize_cw `(v  1 e 1 0 ]
+"31
+[v _cw_message cw_message `(v  1 e 1 0 ]
+"38
+[v _cw cw `(v  1 e 1 0 ]
+"158
+[v _dah dah `(v  1 e 1 0 ]
+"164
+[v _dit dit `(v  1 e 1 0 ]
+"170
+[v _ditspace ditspace `(v  1 e 1 0 ]
+"178
+[v _dahspace dahspace `(v  1 e 1 0 ]
+"23 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\main.c
+[v _main main `(v  1 e 1 0 ]
+"11 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\tone_generator.c
+[v _initialize_tone_generator initialize_tone_generator `(v  1 e 1 0 ]
+"39
+[v _deinitialize_tone_generator deinitialize_tone_generator `(v  1 e 1 0 ]
+"44
+[v _tone_enable tone_enable `(v  1 e 1 0 ]
+"16 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X/cw.h
+[v _dit_length dit_length `i  1 e 2 0 ]
+[s S666 . 1 `uc 1 TMR1IF 1 0 :1:0 
+`uc 1 TMR1GIF 1 0 :1:1 
+`uc 1 TMR2IF 1 0 :1:2 
+`uc 1 CCP1IF 1 0 :1:3 
+`uc 1 . 1 0 :1:4 
+`uc 1 NCO1IF 1 0 :1:5 
+`uc 1 CWG1IF 1 0 :1:6 
+`uc 1 CLC1IF 1 0 :1:7 
+]
+"4386 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
+[u S675 . 1 `S666 1 . 1 0 ]
+[v _PIR4bits PIR4bits `VES675  1 e 1 @14756 ]
+[s S67 . 1 `uc 1 DOZE 1 0 :3:0 
+`uc 1 . 1 0 :1:3 
+`uc 1 DOE 1 0 :1:4 
+`uc 1 ROI 1 0 :1:5 
+`uc 1 DOZEN 1 0 :1:6 
+`uc 1 IDLEN 1 0 :1:7 
+]
+"5162
+[s S74 . 1 `uc 1 DOZE0 1 0 :1:0 
+`uc 1 DOZE1 1 0 :1:1 
+`uc 1 DOZE2 1 0 :1:2 
+]
+[u S78 . 1 `S67 1 . 1 0 `S74 1 . 1 0 ]
+[v _CPUDOZEbits CPUDOZEbits `VES78  1 e 1 @14808 ]
+"7516
+[v _RC4PPS RC4PPS `VEuc  1 e 1 @14868 ]
+"7716
+[v _ANSELA ANSELA `VEuc  1 e 1 @14912 ]
+[s S307 . 1 `uc 1 BIT 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 OPOL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"20688
+[s S314 . 1 `uc 1 MD1BIT 1 0 :1:0 
+`uc 1 . 1 0 :3:1 
+`uc 1 MD1OPOL 1 0 :1:4 
+`uc 1 MD1OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 MD1EN 1 0 :1:7 
+]
+[u S321 . 1 `S307 1 . 1 0 `S314 1 . 1 0 ]
+[v _MD1CON0bits MD1CON0bits `VES321  1 e 1 @15610 ]
+[s S202 . 1 `uc 1 CLSYNC 1 0 :1:0 
+`uc 1 CLPOL 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 CHSYNC 1 0 :1:4 
+`uc 1 CHPOL 1 0 :1:5 
+]
+"20754
+[s S208 . 1 `uc 1 MD1CLSYNC 1 0 :1:0 
+`uc 1 MD1CLPOL 1 0 :1:1 
+`uc 1 . 1 0 :2:2 
+`uc 1 MD1CHSYNC 1 0 :1:4 
+`uc 1 MD1CHPOL 1 0 :1:5 
+]
+[u S214 . 1 `S202 1 . 1 0 `S208 1 . 1 0 ]
+[v _MD1CON1bits MD1CON1bits `VES214  1 e 1 @15611 ]
+[s S268 . 1 `uc 1 MS 1 0 :5:0 
+]
+"20826
+[s S270 . 1 `uc 1 MS0 1 0 :1:0 
+`uc 1 MS1 1 0 :1:1 
+`uc 1 MS2 1 0 :1:2 
+`uc 1 MS3 1 0 :1:3 
+`uc 1 MS4 1 0 :1:4 
+]
+[s S276 . 1 `uc 1 MD1MS 1 0 :5:0 
+]
+[s S278 . 1 `uc 1 MD1MS0 1 0 :1:0 
+`uc 1 MD1MS1 1 0 :1:1 
+`uc 1 MD1MS2 1 0 :1:2 
+`uc 1 MD1MS3 1 0 :1:3 
+`uc 1 MD1MS4 1 0 :1:4 
+]
+[u S284 . 1 `S268 1 . 1 0 `S270 1 . 1 0 `S276 1 . 1 0 `S278 1 . 1 0 ]
+[v _MD1SRCbits MD1SRCbits `VES284  1 e 1 @15612 ]
+[s S230 . 1 `uc 1 CH 1 0 :5:0 
+]
+"21010
+[s S232 . 1 `uc 1 CH0 1 0 :1:0 
+`uc 1 CH1 1 0 :1:1 
+`uc 1 CH2 1 0 :1:2 
+`uc 1 CH3 1 0 :1:3 
+`uc 1 CH4 1 0 :1:4 
+]
+[s S238 . 1 `uc 1 MD1CH 1 0 :5:0 
+]
+[s S240 . 1 `uc 1 MD1CH0 1 0 :1:0 
+`uc 1 MD1CH1 1 0 :1:1 
+`uc 1 MD1CH2 1 0 :1:2 
+`uc 1 MD1CH3 1 0 :1:3 
+`uc 1 MD1CH4 1 0 :1:4 
+]
+[u S246 . 1 `S230 1 . 1 0 `S232 1 . 1 0 `S238 1 . 1 0 `S240 1 . 1 0 ]
+[v _MD1CARHbits MD1CARHbits `VES246  1 e 1 @15614 ]
+[s S566 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 DC 1 0 :2:6 
+]
+"37610
+[s S569 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 DC0 1 0 :1:6 
+`uc 1 DC1 1 0 :1:7 
+]
+"37610
+[s S573 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PWM5DC0 1 0 :1:6 
+`uc 1 PWM5DC1 1 0 :1:7 
+]
+"37610
+[s S577 . 1 `uc 1 . 1 0 :6:0 
+`uc 1 PWMPW0 1 0 :1:6 
+`uc 1 PWMPW1 1 0 :1:7 
+]
+"37610
+[u S581 . 1 `S566 1 . 1 0 `S569 1 . 1 0 `S573 1 . 1 0 `S577 1 . 1 0 ]
+"37610
+"37610
+[v _PWM5DCLbits PWM5DCLbits `VES581  1 e 1 @16236 ]
+[s S602 . 1 `uc 1 DC 1 0 :8:0 
+]
+"37690
+[s S604 . 1 `uc 1 DC2 1 0 :1:0 
+`uc 1 DC3 1 0 :1:1 
+`uc 1 DC4 1 0 :1:2 
+`uc 1 DC5 1 0 :1:3 
+`uc 1 DC6 1 0 :1:4 
+`uc 1 DC7 1 0 :1:5 
+`uc 1 DC8 1 0 :1:6 
+`uc 1 DC9 1 0 :1:7 
+]
+"37690
+[s S613 . 1 `uc 1 PWM5DC2 1 0 :1:0 
+`uc 1 PWM5DC3 1 0 :1:1 
+`uc 1 PWM5DC4 1 0 :1:2 
+`uc 1 PWM5DC5 1 0 :1:3 
+`uc 1 PWM5DC6 1 0 :1:4 
+`uc 1 PWM5DC7 1 0 :1:5 
+`uc 1 PWM5DC8 1 0 :1:6 
+`uc 1 PWM5DC9 1 0 :1:7 
+]
+"37690
+[s S622 . 1 `uc 1 PWMPW2 1 0 :1:0 
+`uc 1 PWMPW3 1 0 :1:1 
+`uc 1 PWMPW4 1 0 :1:2 
+`uc 1 PWMPW5 1 0 :1:3 
+`uc 1 PWMPW6 1 0 :1:4 
+`uc 1 PWMPW7 1 0 :1:5 
+`uc 1 PWMPW8 1 0 :1:6 
+`uc 1 PWMPW9 1 0 :1:7 
+]
+"37690
+[u S631 . 1 `S602 1 . 1 0 `S604 1 . 1 0 `S613 1 . 1 0 `S622 1 . 1 0 ]
+"37690
+"37690
+[v _PWM5DCHbits PWM5DCHbits `VES631  1 e 1 @16237 ]
+"37820
+[v _PWM5CON PWM5CON `VEuc  1 e 1 @16238 ]
+[s S777 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 POL 1 0 :1:4 
+`uc 1 OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 EN 1 0 :1:7 
+]
+"37841
+[s S783 . 1 `uc 1 . 1 0 :4:0 
+`uc 1 PWM5POL 1 0 :1:4 
+`uc 1 PWM5OUT 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 PWM5EN 1 0 :1:7 
+]
+"37841
+[u S789 . 1 `S777 1 . 1 0 `S783 1 . 1 0 ]
+"37841
+"37841
+[v _PWM5CONbits PWM5CONbits `VES789  1 e 1 @16238 ]
+[s S429 . 1 `uc 1 PR4 1 0 :8:0 
+]
+"40373
+[u S431 . 1 `S429 1 . 1 0 ]
+"40373
+"40373
+[v _T4PRbits T4PRbits `VES431  1 e 1 @16287 ]
+[s S373 . 1 `uc 1 OUTPS 1 0 :4:0 
+`uc 1 CKPS 1 0 :3:4 
+`uc 1 ON 1 0 :1:7 
+]
+"40432
+[s S377 . 1 `uc 1 T4OUTPS 1 0 :4:0 
+`uc 1 T4CKPS 1 0 :3:4 
+`uc 1 T4ON 1 0 :1:7 
+]
+"40432
+[s S381 . 1 `uc 1 T4OUTPS0 1 0 :1:0 
+`uc 1 T4OUTPS1 1 0 :1:1 
+`uc 1 T4OUTPS2 1 0 :1:2 
+`uc 1 T4OUTPS3 1 0 :1:3 
+`uc 1 T4CKPS0 1 0 :1:4 
+`uc 1 T4CKPS1 1 0 :1:5 
+`uc 1 T4CKPS2 1 0 :1:6 
+]
+"40432
+[s S389 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR4ON 1 0 :1:7 
+]
+"40432
+[u S398 . 1 `S373 1 . 1 0 `S377 1 . 1 0 `S381 1 . 1 0 `S389 1 . 1 0 ]
+"40432
+"40432
+[v _T4CONbits T4CONbits `VES398  1 e 1 @16288 ]
+[s S436 . 1 `uc 1 MODE 1 0 :5:0 
+`uc 1 CKSYNC 1 0 :1:5 
+`uc 1 CKPOL 1 0 :1:6 
+`uc 1 PSYNC 1 0 :1:7 
+]
+"40575
+[s S441 . 1 `uc 1 MODE0 1 0 :1:0 
+`uc 1 MODE1 1 0 :1:1 
+`uc 1 MODE2 1 0 :1:2 
+`uc 1 MODE3 1 0 :1:3 
+`uc 1 MODE4 1 0 :1:4 
+]
+"40575
+[s S447 . 1 `uc 1 T4MODE 1 0 :5:0 
+`uc 1 T4CKSYNC 1 0 :1:5 
+`uc 1 T4CKPOL 1 0 :1:6 
+`uc 1 T4PSYNC 1 0 :1:7 
+]
+"40575
+[s S452 . 1 `uc 1 T4MODE0 1 0 :1:0 
+`uc 1 T4MODE1 1 0 :1:1 
+`uc 1 T4MODE2 1 0 :1:2 
+`uc 1 T4MODE3 1 0 :1:3 
+`uc 1 T4MODE4 1 0 :1:4 
+]
+"40575
+[u S458 . 1 `S436 1 . 1 0 `S441 1 . 1 0 `S447 1 . 1 0 `S452 1 . 1 0 ]
+"40575
+"40575
+[v _T4HLTbits T4HLTbits `VES458  1 e 1 @16289 ]
+[s S339 . 1 `uc 1 CS 1 0 :4:0 
+]
+"40773
+[s S341 . 1 `uc 1 CS0 1 0 :1:0 
+`uc 1 CS1 1 0 :1:1 
+`uc 1 CS2 1 0 :1:2 
+`uc 1 CS3 1 0 :1:3 
+]
+"40773
+[s S346 . 1 `uc 1 T4CS 1 0 :4:0 
+]
+"40773
+[s S348 . 1 `uc 1 T4CS0 1 0 :1:0 
+`uc 1 T4CS1 1 0 :1:1 
+`uc 1 T4CS2 1 0 :1:2 
+`uc 1 T4CS3 1 0 :1:3 
+]
+"40773
+[u S353 . 1 `S339 1 . 1 0 `S341 1 . 1 0 `S346 1 . 1 0 `S348 1 . 1 0 ]
+"40773
+"40773
+[v _T4CLKbits T4CLKbits `VES353  1 e 1 @16290 ]
+"41834
+[v _T2PR T2PR `VEuc  1 e 1 @16299 ]
+"41908
+[s S725 . 1 `uc 1 T2OUTPS 1 0 :4:0 
+`uc 1 T2CKPS 1 0 :3:4 
+`uc 1 T2ON 1 0 :1:7 
+]
+"41908
+[s S729 . 1 `uc 1 T2OUTPS0 1 0 :1:0 
+`uc 1 T2OUTPS1 1 0 :1:1 
+`uc 1 T2OUTPS2 1 0 :1:2 
+`uc 1 T2OUTPS3 1 0 :1:3 
+`uc 1 T2CKPS0 1 0 :1:4 
+`uc 1 T2CKPS1 1 0 :1:5 
+`uc 1 T2CKPS2 1 0 :1:6 
+]
+"41908
+[s S737 . 1 `uc 1 OUTPS0 1 0 :1:0 
+`uc 1 OUTPS1 1 0 :1:1 
+`uc 1 OUTPS2 1 0 :1:2 
+`uc 1 OUTPS3 1 0 :1:3 
+`uc 1 CKPS0 1 0 :1:4 
+`uc 1 CKPS1 1 0 :1:5 
+`uc 1 CKPS2 1 0 :1:6 
+`uc 1 TMR2ON 1 0 :1:7 
+]
+"41908
+[u S746 . 1 `S373 1 . 1 0 `S725 1 . 1 0 `S729 1 . 1 0 `S737 1 . 1 0 ]
+"41908
+"41908
+[v _T2CONbits T2CONbits `VES746  1 e 1 @16300 ]
+"42249
+"42249
+[s S694 . 1 `uc 1 T2CS 1 0 :4:0 
+]
+"42249
+[s S696 . 1 `uc 1 T2CS0 1 0 :1:0 
+`uc 1 T2CS1 1 0 :1:1 
+`uc 1 T2CS2 1 0 :1:2 
+`uc 1 T2CS3 1 0 :1:3 
+]
+"42249
+[u S701 . 1 `S339 1 . 1 0 `S341 1 . 1 0 `S694 1 . 1 0 `S696 1 . 1 0 ]
+"42249
+"42249
+[v _T2CLKbits T2CLKbits `VES701  1 e 1 @16302 ]
+[s S25 . 1 `uc 1 TRISA0 1 0 :1:0 
+`uc 1 TRISA1 1 0 :1:1 
+`uc 1 TRISA2 1 0 :1:2 
+`uc 1 TRISA3 1 0 :1:3 
+`uc 1 TRISA4 1 0 :1:4 
+`uc 1 TRISA5 1 0 :1:5 
+`uc 1 TRISA6 1 0 :1:6 
+`uc 1 TRISA7 1 0 :1:7 
+]
+"44257
+[u S34 . 1 `S25 1 . 1 0 ]
+"44257
+"44257
+[v _TRISAbits TRISAbits `VES34  1 e 1 @16322 ]
+[s S46 . 1 `uc 1 TRISC0 1 0 :1:0 
+`uc 1 TRISC1 1 0 :1:1 
+`uc 1 TRISC2 1 0 :1:2 
+`uc 1 TRISC3 1 0 :1:3 
+`uc 1 TRISC4 1 0 :1:4 
+`uc 1 TRISC5 1 0 :1:5 
+`uc 1 TRISC6 1 0 :1:6 
+`uc 1 TRISC7 1 0 :1:7 
+]
+"44381
+[u S55 . 1 `S46 1 . 1 0 ]
+"44381
+"44381
+[v _TRISCbits TRISCbits `VES55  1 e 1 @16324 ]
+[s S93 . 1 `uc 1 RA0 1 0 :1:0 
+`uc 1 RA1 1 0 :1:1 
+`uc 1 RA2 1 0 :1:2 
+`uc 1 RA3 1 0 :1:3 
+`uc 1 RA4 1 0 :1:4 
+`uc 1 RA5 1 0 :1:5 
+`uc 1 RA6 1 0 :1:6 
+`uc 1 RA7 1 0 :1:7 
+]
+"44450
+[s S102 . 1 `uc 1 ULPWUIN 1 0 :1:0 
+`uc 1 . 1 0 :4:1 
+`uc 1 LVDIN 1 0 :1:5 
+`uc 1 . 1 0 :1:6 
+`uc 1 RJPU 1 0 :1:7 
+]
+"44450
+[u S108 . 1 `S93 1 . 1 0 `S102 1 . 1 0 ]
+"44450
+"44450
+[v _PORTAbits PORTAbits `VES108  1 e 1 @16330 ]
+"23 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\main.c
+[v _main main `(v  1 e 1 0 ]
+{
+"75
+} 0
+"11 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\tone_generator.c
+[v _initialize_tone_generator initialize_tone_generator `(v  1 e 1 0 ]
+{
+"13
+[v initialize_tone_generator@duty_cycle duty_cycle `ui  1 a 2 8 ]
+"12
+[v initialize_tone_generator@period_value period_value `ui  1 a 2 6 ]
+"14
+[v initialize_tone_generator@duty_cycle_l duty_cycle_l `ui  1 a 2 4 ]
+"11
+[v initialize_tone_generator@osc_freq osc_freq `f  1 p 4 76 ]
+[v initialize_tone_generator@pwm_freq pwm_freq `f  1 p 4 80 ]
+"37
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
+[v ___xxtofl __xxtofl `(d  1 e 4 0 ]
+{
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+"13
+[v ___xxtofl@arg arg `ul  1 a 4 10 ]
+"12
+[v ___xxtofl@exp exp `uc  1 a 1 9 ]
+"10
+[v ___xxtofl@sign sign `uc  1 a 1 wreg ]
+[v ___xxtofl@val val `l  1 p 4 0 ]
+"15
+[v ___xxtofl@sign sign `uc  1 a 1 8 ]
+"44
+} 0
+"43 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
+[v ___fltol __fltol `(l  1 e 4 0 ]
+{
+"45
+[v ___fltol@exp1 exp1 `uc  1 a 1 75 ]
+[v ___fltol@sign1 sign1 `uc  1 a 1 74 ]
+"43
+[v ___fltol@f1 f1 `d  1 p 4 66 ]
+"70
+} 0
+"8 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcmul.c
+[v ___flmul __flmul `(d  1 e 4 0 ]
+{
+[s S1140 . 4 `uc 1 a 1 0 `uc 1 b 1 1 `uc 1 c 1 2 `uc 1 d 1 3 ]
+"13
+[s S1145 . 4 `s 1 wordA 2 0 `s 1 wordB 2 2 ]
+[u S1148 . 4 `l 1 i 4 0 `d 1 f 4 0 `S1140 1 fAsBytes 4 0 `S1145 1 fAsWords 4 0 ]
+[v ___flmul@prod prod `S1148  1 a 4 44 ]
+"12
+[v ___flmul@grs grs `ul  1 a 4 38 ]
+[s S1216 . 2 `uc 1 a 1 0 `uc 1 b 1 1 ]
+"14
+[u S1219 . 2 `s 1 i 2 0 `us 1 n 2 0 `S1216 1 nAsBytes 2 0 ]
+[v ___flmul@temp temp `S1219  1 a 2 48 ]
+"10
+[v ___flmul@bexp bexp `uc  1 a 1 43 ]
+"11
+[v ___flmul@aexp aexp `uc  1 a 1 42 ]
+"9
+[v ___flmul@sign sign `uc  1 a 1 37 ]
+"8
+[v ___flmul@b b `d  1 p 4 25 ]
+[v ___flmul@a a `d  1 p 4 29 ]
+"205
+} 0
+"11 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
+[v ___fldiv __fldiv `(d  1 e 4 0 ]
+{
+"21
+[v ___fldiv@grs grs `ul  1 a 4 19 ]
+"22
+[v ___fldiv@rem rem `ul  1 a 4 12 ]
+"20
+[v ___fldiv@new_exp new_exp `s  1 a 2 17 ]
+"19
+[v ___fldiv@aexp aexp `uc  1 a 1 24 ]
+"18
+[v ___fldiv@bexp bexp `uc  1 a 1 23 ]
+"16
+[v ___fldiv@sign sign `uc  1 a 1 16 ]
+"11
+[v ___fldiv@b b `d  1 p 4 0 ]
+[v ___fldiv@a a `d  1 p 4 4 ]
+"185
+} 0
+"10 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
+[v ___fladd __fladd `(d  1 e 4 0 ]
+{
+"17
+[v ___fladd@grs grs `uc  1 a 1 65 ]
+"15
+[v ___fladd@bexp bexp `uc  1 a 1 64 ]
+"16
+[v ___fladd@aexp aexp `uc  1 a 1 63 ]
+"13
+[v ___fladd@signs signs `uc  1 a 1 62 ]
+"10
+[v ___fladd@b b `d  1 p 4 50 ]
+[v ___fladd@a a `d  1 p 4 54 ]
+"237
+} 0
+"10 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\cw.c
+[v _initialize_cw initialize_cw `(v  1 e 1 0 ]
+{
+[v initialize_cw@speed speed `i  1 p 2 1 ]
+"24
+} 0
+"39 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\tone_generator.c
+[v _deinitialize_tone_generator deinitialize_tone_generator `(v  1 e 1 0 ]
+{
+"42
+} 0
+"26 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\cw.c
+[v _deinitialize_cw deinitialize_cw `(v  1 e 1 0 ]
+{
+"29
+} 0
+"44 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\tone_generator.c
+[v _tone_enable tone_enable `(v  1 e 1 0 ]
+{
+[v tone_enable@tone_active tone_active `a  1 a 1 wreg ]
+[v tone_enable@tone_active tone_active `a  1 a 1 wreg ]
+[v tone_enable@tone_active tone_active `a  1 a 1 0 ]
+"50
+} 0
+"31 X:\Microcontroller\PIC18F27K42\Fox Hunt Controller.X\cw.c
+[v _cw_message cw_message `(v  1 e 1 0 ]
+{
+"32
+[v cw_message@i i `i  1 a 2 11 ]
+"31
+[v cw_message@message message `*.32uc  1 p 2 5 ]
+[v cw_message@message_size message_size `ui  1 p 2 7 ]
+"36
+} 0
+"38
+[v _cw cw `(v  1 e 1 0 ]
+{
+[v cw@character character `uc  1 a 1 wreg ]
+[v cw@character character `uc  1 a 1 wreg ]
+[v cw@character character `uc  1 a 1 4 ]
+"156
+} 0
+"164
+[v _dit dit `(v  1 e 1 0 ]
+{
+"168
+} 0
+"158
+[v _dah dah `(v  1 e 1 0 ]
+{
+"162
+} 0
+"178
+[v _dahspace dahspace `(v  1 e 1 0 ]
+{
+"179
+[v dahspace@i i `i  1 a 2 0 ]
+"182
+} 0
+"170
+[v _ditspace ditspace `(v  1 e 1 0 ]
+{
+"176
+} 0

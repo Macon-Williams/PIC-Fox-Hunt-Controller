@@ -25747,12 +25747,14 @@ void main(void) {
 
             if (PORTAbits.RA0) {
                 while(PORTAbits.RA0);
+                PORTAbits.RA1 = 1;
                 _delay((unsigned long)((500)*(31000UL/4000.0)));
                 initialize_cw(60);
-                cw_message("OK", 2);
+                cw_message("OK ", 2);
                 cw_message("N0MCW", sizeof("N0MCW"));
                 deinitialize_cw();
                 deinitialize_tone_generator();
+                PORTAbits.RA1 = 0;
                 fox_hunt = 0;
             }
         }
@@ -25764,6 +25766,8 @@ void initialize_pins(void) {
     TRISAbits.TRISA0 = 1;
     TRISAbits.TRISA1 = 0;
     TRISCbits.TRISC4 = 0;
+    PORTAbits.RA1 = 0;
+
 }
 
 void initialize_interrupts(void) {

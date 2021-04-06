@@ -69,12 +69,14 @@ void main(void) {
             // Stop the hunt if the radio receives a signal
             if (COS_STATUS) {
                 while(COS_STATUS);              // Wait for user to unkey
+                PTT_PIN     = 1;                // Enable PTT
                 __delay_ms(500);
                 initialize_cw(DIT_LENGTH);
-                cw_message("OK", 2);            // User feedback, acknowledge the shutdown
+                cw_message("OK ", 2);            // User feedback, acknowledge the shutdown
                 cw_message(CALLSIGN, sizeof(CALLSIGN));
                 deinitialize_cw();
                 deinitialize_tone_generator();
+                PTT_PIN     = 0;                // Disable PTT
                 fox_hunt = false;               // Leave the fox hunt loop and go back to dozing
             }
         }

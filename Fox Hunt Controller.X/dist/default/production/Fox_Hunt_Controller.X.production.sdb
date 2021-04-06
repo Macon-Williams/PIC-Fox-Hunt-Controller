@@ -49,13 +49,13 @@
 [v _dahspace dahspace `(v  1 e 1 0 ]
 "26 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\main.c
 [v _main main `(v  1 e 1 0 ]
-"84
+"86
 [v _initialize_pins initialize_pins `(v  1 e 1 0 ]
-"91
+"95
 [v _initialize_interrupts initialize_interrupts `(v  1 e 1 0 ]
-"98
+"102
 [v _configure_timer configure_timer `(v  1 e 1 0 ]
-"104
+"108
 [v _TMR1_ISR TMR1_ISR `IIH(v  1 e 1 0 ]
 "11 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\tone_generator.c
 [v _initialize_tone_generator initialize_tone_generator `(v  1 e 1 0 ]
@@ -553,7 +553,7 @@
 "26
 [v _main main `(v  1 e 1 0 ]
 {
-"82
+"84
 } 0
 "11 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\tone_generator.c
 [v _initialize_tone_generator initialize_tone_generator `(v  1 e 1 0 ]
@@ -655,15 +655,15 @@
 [v ___fladd@a a `d  1 p 4 54 ]
 "237
 } 0
-"84 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\main.c
+"86 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\main.c
 [v _initialize_pins initialize_pins `(v  1 e 1 0 ]
 {
-"89
+"93
 } 0
-"91
+"95
 [v _initialize_interrupts initialize_interrupts `(v  1 e 1 0 ]
 {
-"96
+"100
 } 0
 "10 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\cw.c
 [v _initialize_cw initialize_cw `(v  1 e 1 0 ]
@@ -729,13 +729,13 @@
 {
 "173
 } 0
-"98 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\main.c
+"102 X:\Microcontroller\Repositories\Fox Hunt Controller\PIC18F27K42-Fox-Hunt-Controller\Fox Hunt Controller.X\main.c
 [v _configure_timer configure_timer `(v  1 e 1 0 ]
 {
-"102
+"106
 } 0
-"104
+"108
 [v _TMR1_ISR TMR1_ISR `IIH(v  1 e 1 0 ]
 {
-"108
+"112
 } 0

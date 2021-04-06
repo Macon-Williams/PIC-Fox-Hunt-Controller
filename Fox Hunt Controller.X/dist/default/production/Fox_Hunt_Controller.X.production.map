@@ -6,7 +6,7 @@ Linker command line:
   -pivt0x8=08h -cn \
   -h+dist/default/production\Fox_Hunt_Controller.X.production.sym \
   --cmf=dist/default/production\Fox_Hunt_Controller.X.production.cmf -z \
-  -Q18F27K42 -oC:\Users\willi\AppData\Local\Temp\xcAsh2k.4 \
+  -Q18F27K42 -oC:\Users\willi\AppData\Local\Temp\xcAsato.4 \
   --defsym=__MPLAB_BUILD=1 \
   -Mdist/default/production/Fox_Hunt_Controller.X.production.map -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=06Ah-01FFFh -pstack=STACK \
@@ -33,7 +33,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\willi\AppData\Local\Temp\xcAsh2k.o \
+  C:\Users\willi\AppData\Local\Temp\xcAsato.o \
   dist/default/production\Fox_Hunt_Controller.X.production.o 
 
 Object code version is 3.11
@@ -43,7 +43,7 @@ Machine type is 18F27K42
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\willi\AppData\Local\Temp\xcAsh2k.o
+C:\Users\willi\AppData\Local\Temp\xcAsato.o
                 idloc                            200000   200000       10        0       5
                 config                           300000   300000        A        0       4
                 init                                 AE       AE        4        4       0
@@ -53,31 +53,31 @@ dist/default/production\Fox_Hunt_Controller.X.production.o
                 config                           300000   300000        A        0       4
                 smallconst                         2000     2000       16     1000       0
                 ivt0x8                                8        8       A6        4       0
-                text20                             3A9C     3A9C       20      EA7       0
-                text19                             3B48     3B48        C      EA7       0
-                text18                             3AF4     3AF4       12      EA7       0
-                text17                             3A6C     3A6C       2E     100B       0
-                text16                             3B22     3B22        E      EA7       0
-                text15                             3B14     3B14        E      EA7       0
+                text20                             3AA0     3AA0       20      EA8       0
+                text19                             3B4E     3B4E        C      EA8       0
+                text18                             3AF8     3AF8       12      EA8       0
+                text17                             3A70     3A70       2E     100B       0
+                text16                             3B28     3B28        E      EA8       0
+                text15                             3B1A     3B1A        E      EA8       0
                 text14                             2016     2016      75A     100B       0
-                text13                             39D2     39D2       54     100B       0
-                text12                             3AD8     3AD8       1C      EA7       0
-                text11                             3B3C     3B3C        C      EA7       0
-                text10                             3B54     3B54        8      EA7       0
-                text9                              3A26     3A26       46     100B       0
-                text8                              3B30     3B30        C      EA7       0
-                text7                              3B06     3B06        E      EA7       0
+                text13                             39D6     39D6       54     100B       0
+                text12                             3ADC     3ADC       1C      EA8       0
+                text11                             3B42     3B42        C      EA8       0
+                text10                             3B5A     3B5A        8      EA8       0
+                text9                              3A2A     3A2A       46     100B       0
+                text8                              3B36     3B36        C      EA8       0
+                text7                              3B0A     3B0A       10      EA8       0
                 text6                              2770     2770      4C0     100B       0
                 text5                              307E     307E      39A     100B       0
                 text4                              2C30     2C30      44E     100B       0
-                text3                              38CC     38CC      106     100B       0
+                text3                              38D0     38D0      106     100B       0
                 text2                              3418     3418      1B4     100B       0
-                text1                              35CC     35CC      182     100B       0
-                text0                              374E     374E      17E     100B       0
+                text1                              374E     374E      182     100B       0
+                text0                              35CC     35CC      182     100B       0
                 cstackCOMRAM                          1        1       57        1       1
                 cstackBANK0                          60       60        A       60       1
                 bssCOMRAM                            58       58        5        1       1
-                cinit                              3ABC     3ABC       1C      EA7       0
+                cinit                              3AC0     3AC0       1C      EA8       0
 
 TOTAL           Name                               Link     Load   Length     Space
         CLASS   STACK          
@@ -86,28 +86,28 @@ TOTAL           Name                               Link     Load   Length     Sp
                 init                                 AE       AE        4         0
                 reset_vec                             0        0        4         0
                 ivt0x8                                8        8       A6         0
-                text20                             3A9C     3A9C       20         0
-                text19                             3B48     3B48        C         0
-                text18                             3AF4     3AF4       12         0
-                text17                             3A6C     3A6C       2E         0
-                text16                             3B22     3B22        E         0
-                text15                             3B14     3B14        E         0
+                text20                             3AA0     3AA0       20         0
+                text19                             3B4E     3B4E        C         0
+                text18                             3AF8     3AF8       12         0
+                text17                             3A70     3A70       2E         0
+                text16                             3B28     3B28        E         0
+                text15                             3B1A     3B1A        E         0
                 text14                             2016     2016      75A         0
-                text13                             39D2     39D2       54         0
-                text12                             3AD8     3AD8       1C         0
-                text11                             3B3C     3B3C        C         0
-                text10                             3B54     3B54        8         0
-                text9                              3A26     3A26       46         0
-                text8                              3B30     3B30        C         0
-                text7                              3B06     3B06        E         0
+                text13                             39D6     39D6       54         0
+                text12                             3ADC     3ADC       1C         0
+                text11                             3B42     3B42        C         0
+                text10                             3B5A     3B5A        8         0
+                text9                              3A2A     3A2A       46         0
+                text8                              3B36     3B36        C         0
+                text7                              3B0A     3B0A       10         0
                 text6                              2770     2770      4C0         0
                 text5                              307E     307E      39A         0
                 text4                              2C30     2C30      44E         0
-                text3                              38CC     38CC      106         0
+                text3                              38D0     38D0      106         0
                 text2                              3418     3418      1B4         0
-                text1                              35CC     35CC      182         0
-                text0                              374E     374E      17E         0
-                cinit                              3ABC     3ABC       1C         0
+                text1                              374E     374E      182         0
+                text0                              35CC     35CC      182         0
+                cinit                              3AC0     3AC0       1C         0
 
         CLASS   CONST          
 
@@ -212,8 +212,8 @@ SEGMENTS        Name                           Load    Length   Top    Selector 
                 ivt0x8                         000008  0000AA  0000B2         4       0  CODE    
                 cstackBANK0                    000060  00000A  00006A        60       1  BANK0   
                 smallconst                     002000  000016  002016      1000       0  SMALLCON
-                text14                         002016  001A84  003A9A      100B       0  CODE    
-                text20                         003A9C  0000C0  003B5C       EA7       0  CODE    
+                text14                         002016  001A88  003A9E      100B       0  CODE    
+                text20                         003AA0  0000C2  003B62       EA8       0  CODE    
 
 
 UNUSED ADDRESS RANGES
@@ -255,21 +255,21 @@ UNUSED ADDRESS RANGES
                          00006A-001FFF             1F96
         CODE             000004-000007                4
                          0000B2-001FFF             1F4E
-                         003A9A-003A9B                2
-                         003B5C-01FFFF            1C4A4
+                         003A9E-003A9F                2
+                         003B62-01FFFF            1C49E
         COMRAM           00005D-00005F                3
         CONST            000004-000007                4
                          0000B2-001FFF             1F4E
-                         003A9A-003A9B                2
-                         003B5C-01FFFF            1C4A4
+                         003A9E-003A9F                2
+                         003B62-01FFFF            1C49E
         EEDATA           310000-3103FF              400
-        MEDIUMCONST      003A9A-003A9B                2
-                         003B5C-00FFFF             C4A4
+        MEDIUMCONST      003A9E-003A9F                2
+                         003B62-00FFFF             C49E
                          012000-01FFFF             E000
         RAM              00006A-001FFF              100
         SFR              003800-003FFF              100
-        SMALLCONST       003A9A-003A9B                2
-                         003B5C-01FFFF              100
+        SMALLCONST       003A9E-003A9F                2
+                         003B62-01FFFF              100
         STACK            00006A-001FFF             1F96
 
                                   Symbol Table
@@ -310,7 +310,7 @@ _T4PRbits                              (abs)        003F9F
 _TMR1H                                 (abs)        003FB1
 _TMR1IF                                (abs)        01CD20
 _TMR1L                                 (abs)        003FB0
-_TMR1_ISR                              text20       003A9C
+_TMR1_ISR                              text20       003AA0
 _TRISAbits                             (abs)        003FC2
 _TRISCbits                             (abs)        003FC4
 __HRAM                                 (abs)        000000
@@ -386,7 +386,7 @@ __Hreset_vec                           reset_vec    000004
 __Hrparam                              rparam       000000
 __Hsfr                                 sfr          000000
 __Hsmallconst                          smallconst   002016
-__Hspace_0                             (abs)        003B5C
+__Hspace_0                             (abs)        003B62
 __Hspace_1                             (abs)        00006A
 __Hspace_2                             (abs)        000000
 __Hspace_4                             (abs)        60000A
@@ -517,7 +517,7 @@ __Ltext6                               text6        000000
 __Ltext7                               text7        000000
 __Ltext8                               text8        000000
 __Ltext9                               text9        000000
-__S0                                   (abs)        003B5C
+__S0                                   (abs)        003B62
 __S1                                   (abs)        00006A
 __S2                                   (abs)        000000
 __S4                                   (abs)        000000
@@ -547,7 +547,7 @@ ___flmul@grs                           cstackCOMRAM 000027
 ___flmul@prod                          cstackCOMRAM 00002D
 ___flmul@sign                          cstackCOMRAM 000026
 ___flmul@temp                          cstackCOMRAM 000031
-___fltol                               text3        0038CC
+___fltol                               text3        0038D0
 ___fltol@exp1                          cstackCOMRAM 00004C
 ___fltol@f1                            cstackCOMRAM 000043
 ___fltol@sign1                         cstackCOMRAM 00004B
@@ -563,57 +563,57 @@ ___xxtofl@sign                         cstackCOMRAM 000009
 ___xxtofl@val                          cstackCOMRAM 000001
 __accesstop                            (abs)        000060
 __activetblptr                         (abs)        000003
-__end_of_TMR1_ISR                      text20       003ABC
+__end_of_TMR1_ISR                      text20       003AC0
 __end_of___fladd                       text6        002C30
 __end_of___fldiv                       text5        003418
 __end_of___flmul                       text4        00307E
-__end_of___fltol                       text3        0039D2
+__end_of___fltol                       text3        0039D6
 __end_of___xxtofl                      text2        0035CC
-__end_of__initialization               cinit        003AD2
-__end_of_configure_timer               text19       003B54
+__end_of__initialization               cinit        003AD6
+__end_of_configure_timer               text19       003B5A
 __end_of_cw                            text14       002770
-__end_of_cw_message                    text13       003A26
-__end_of_dah                           text16       003B30
-__end_of_dahspace                      text17       003A9A
-__end_of_deinitialize_cw               text11       003B48
-__end_of_deinitialize_tone_generator   text10       003B5C
-__end_of_dit                           text15       003B22
-__end_of_ditspace                      text18       003B06
-__end_of_initialize_cw                 text9        003A6C
-__end_of_initialize_interrupts         text8        003B3C
-__end_of_initialize_pins               text7        003B14
-__end_of_initialize_tone_generator     text1        00374E
-__end_of_main                          text0        0038CC
-__end_of_tone_enable                   text12       003AF4
-__initialization                       cinit        003ABC
+__end_of_cw_message                    text13       003A2A
+__end_of_dah                           text16       003B36
+__end_of_dahspace                      text17       003A9E
+__end_of_deinitialize_cw               text11       003B4E
+__end_of_deinitialize_tone_generator   text10       003B62
+__end_of_dit                           text15       003B28
+__end_of_ditspace                      text18       003B0A
+__end_of_initialize_cw                 text9        003A70
+__end_of_initialize_interrupts         text8        003B42
+__end_of_initialize_pins               text7        003B1A
+__end_of_initialize_tone_generator     text1        0038D0
+__end_of_main                          text0        00374E
+__end_of_tone_enable                   text12       003AF8
+__initialization                       cinit        003AC0
 __mediumconst                          mediumconst  000000
 __pbssCOMRAM                           bssCOMRAM    000058
-__pcinit                               cinit        003ABC
+__pcinit                               cinit        003AC0
 __pcstackBANK0                         cstackBANK0  000060
 __pcstackCOMRAM                        cstackCOMRAM 000001
 __pivt0x8                              ivt0x8       000008
 __psmallconst                          smallconst   002000
-__ptext0                               text0        00374E
-__ptext1                               text1        0035CC
-__ptext10                              text10       003B54
-__ptext11                              text11       003B3C
-__ptext12                              text12       003AD8
-__ptext13                              text13       0039D2
+__ptext0                               text0        0035CC
+__ptext1                               text1        00374E
+__ptext10                              text10       003B5A
+__ptext11                              text11       003B42
+__ptext12                              text12       003ADC
+__ptext13                              text13       0039D6
 __ptext14                              text14       002016
-__ptext15                              text15       003B14
-__ptext16                              text16       003B22
-__ptext17                              text17       003A6C
-__ptext18                              text18       003AF4
-__ptext19                              text19       003B48
+__ptext15                              text15       003B1A
+__ptext16                              text16       003B28
+__ptext17                              text17       003A70
+__ptext18                              text18       003AF8
+__ptext19                              text19       003B4E
 __ptext2                               text2        003418
-__ptext20                              text20       003A9C
-__ptext3                               text3        0038CC
+__ptext20                              text20       003AA0
+__ptext3                               text3        0038D0
 __ptext4                               text4        002C30
 __ptext5                               text5        00307E
 __ptext6                               text6        002770
-__ptext7                               text7        003B06
-__ptext8                               text8        003B30
-__ptext9                               text9        003A26
+__ptext7                               text7        003B0A
+__ptext8                               text8        003B36
+__ptext9                               text9        003A2A
 __ramtop                               ramtop       002000
 __size_of_TMR1_ISR                     (abs)        000000
 __size_of___fladd                      (abs)        000000
@@ -637,24 +637,24 @@ __size_of_initialize_tone_generator    (abs)        000000
 __size_of_main                         (abs)        000000
 __size_of_tone_enable                  (abs)        000000
 __smallconst                           smallconst   002000
-_configure_timer                       text19       003B48
+_configure_timer                       text19       003B4E
 _cw                                    text14       002016
-_cw_message                            text13       0039D2
-_dah                                   text16       003B22
-_dahspace                              text17       003A6C
-_deinitialize_cw                       text11       003B3C
-_deinitialize_tone_generator           text10       003B54
-_dit                                   text15       003B14
+_cw_message                            text13       0039D6
+_dah                                   text16       003B28
+_dahspace                              text17       003A70
+_deinitialize_cw                       text11       003B42
+_deinitialize_tone_generator           text10       003B5A
+_dit                                   text15       003B1A
 _dit_length                            bssCOMRAM    000058
-_ditspace                              text18       003AF4
+_ditspace                              text18       003AF8
 _fox_hunt                              bssCOMRAM    00005C
-_initialize_cw                         text9        003A26
-_initialize_interrupts                 text8        003B30
-_initialize_pins                       text7        003B06
-_initialize_tone_generator             text1        0035CC
+_initialize_cw                         text9        003A2A
+_initialize_interrupts                 text8        003B36
+_initialize_pins                       text7        003B0A
+_initialize_tone_generator             text1        00374E
 _initialize_tone_generator$1673        cstackBANK0  000060
-_main                                  text0        00374E
-_tone_enable                           text12       003AD8
+_main                                  text0        0035CC
+_tone_enable                           text12       003ADC
 _transmit                              bssCOMRAM    00005A
 _transmit_change                       bssCOMRAM    00005B
 cw@character                           cstackCOMRAM 000005
@@ -662,7 +662,7 @@ cw_message@i                           cstackCOMRAM 00000C
 cw_message@message                     cstackCOMRAM 000006
 cw_message@message_size                cstackCOMRAM 000008
 dahspace@i                             cstackCOMRAM 000001
-end_of_initialization                  cinit        003AD2
+end_of_initialization                  cinit        003AD6
 initialize_cw@speed                    cstackCOMRAM 000002
 initialize_tone_generator@duty_cycle   cstackBANK0  000068
 initialize_tone_generator@duty_cycle_l cstackBANK0  000064
@@ -680,7 +680,7 @@ ivt0x8_undefint                        ivt0x8       0000AC
 stackhi                                (abs)        001FFF
 stacklo                                (abs)        00006A
 start                                  init         0000AE
-start_initialization                   cinit        003ABC
+start_initialization                   cinit        003AC0
 tone_enable@tone_active                cstackCOMRAM 000001
 
 
@@ -693,26 +693,26 @@ C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c
 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcadd.c estimated size: 1216
 
 cw.c
-		_ditspace      		CODE           	3AF4	0000	18
-		_deinitialize_cw		CODE           	3B3C	0000	12
-		_cw_message    		CODE           	39D2	0000	84
-		_dahspace      		CODE           	3A6C	0000	46
-		_dit           		CODE           	3B14	0000	14
+		_ditspace      		CODE           	3AF8	0000	18
+		_deinitialize_cw		CODE           	3B42	0000	12
+		_cw_message    		CODE           	39D6	0000	84
+		_dahspace      		CODE           	3A70	0000	46
+		_dit           		CODE           	3B1A	0000	14
 		_cw            		CODE           	2016	0000	1882
-		_dah           		CODE           	3B22	0000	14
-		_initialize_cw 		CODE           	3A26	0000	70
+		_dah           		CODE           	3B28	0000	14
+		_initialize_cw 		CODE           	3A2A	0000	70
 
 cw.c estimated size: 2140
 
 tone_generator.c
-		_deinitialize_tone_generator		CODE           	3B54	0000	8
-		_initialize_tone_generator		CODE           	35CC	0000	386
-		_tone_enable   		CODE           	3AD8	0000	28
+		_deinitialize_tone_generator		CODE           	3B5A	0000	8
+		_initialize_tone_generator		CODE           	374E	0000	386
+		_tone_enable   		CODE           	3ADC	0000	28
 
 tone_generator.c estimated size: 422
 
 shared
-		__initialization		CODE           	3ABC	0000	22
+		__initialization		CODE           	3AC0	0000	22
 
 shared estimated size: 22
 
@@ -727,7 +727,7 @@ C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c
 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\sprcdiv.c estimated size: 922
 
 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c
-		___fltol       		CODE           	38CC	0000	262
+		___fltol       		CODE           	38D0	0000	262
 
 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\fltol.c estimated size: 262
 
@@ -737,11 +737,11 @@ C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c
 C:\Program Files\Microchip\xc8\v2.32\pic\sources\c99\common\xxtofl.c estimated size: 436
 
 main.c
-		_initialize_interrupts		CODE           	3B30	0000	12
-		_main          		CODE           	374E	0000	382
-		_initialize_pins		CODE           	3B06	0000	14
-		_configure_timer		CODE           	3B48	0000	12
-		_TMR1_ISR      		CODE           	3A9C	0000	32
+		_initialize_interrupts		CODE           	3B36	0000	12
+		_main          		CODE           	35CC	0000	386
+		_initialize_pins		CODE           	3B0A	0000	16
+		_configure_timer		CODE           	3B4E	0000	12
+		_TMR1_ISR      		CODE           	3AA0	0000	32
 
-main.c estimated size: 452
+main.c estimated size: 458
 

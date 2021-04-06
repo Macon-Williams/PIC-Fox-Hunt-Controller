@@ -2517,132 +2517,141 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ != -> . . _PORTAbits 0 0 `i -> 0 `i 2155  ]
 [e :U 2156 ]
 "72
-[; ;main.c: 72:                 _delay((unsigned long)((500)*(31000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 31000 `ul `d .4000.0 `ul ]
+[; ;main.c: 72:                 PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
 "73
-[; ;main.c: 73:                 initialize_cw(60);
-[e ( _initialize_cw (1 -> 60 `i ]
+[; ;main.c: 73:                 _delay((unsigned long)((500)*(31000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 31000 `ul `d .4000.0 `ul ]
 "74
-[; ;main.c: 74:                 cw_message("OK", 2);
-[e ( _cw_message (2 , :s 3C -> -> 2 `i `ui ]
+[; ;main.c: 74:                 initialize_cw(60);
+[e ( _initialize_cw (1 -> 60 `i ]
 "75
-[; ;main.c: 75:                 cw_message("N0MCW", sizeof("N0MCW"));
-[e ( _cw_message (2 , :s 4C -> 6 `ui ]
+[; ;main.c: 75:                 cw_message("OK ", 2);
+[e ( _cw_message (2 , :s 3C -> -> 2 `i `ui ]
 "76
-[; ;main.c: 76:                 deinitialize_cw();
-[e ( _deinitialize_cw ..  ]
+[; ;main.c: 76:                 cw_message("N0MCW", sizeof("N0MCW"));
+[e ( _cw_message (2 , :s 4C -> 6 `ui ]
 "77
-[; ;main.c: 77:                 deinitialize_tone_generator();
-[e ( _deinitialize_tone_generator ..  ]
+[; ;main.c: 77:                 deinitialize_cw();
+[e ( _deinitialize_cw ..  ]
 "78
-[; ;main.c: 78:                 fox_hunt = 0;
-[e = _fox_hunt -> -> 0 `i `a ]
+[; ;main.c: 78:                 deinitialize_tone_generator();
+[e ( _deinitialize_tone_generator ..  ]
 "79
-[; ;main.c: 79:             }
+[; ;main.c: 79:                 PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+"80
+[; ;main.c: 80:                 fox_hunt = 0;
+[e = _fox_hunt -> -> 0 `i `a ]
+"81
+[; ;main.c: 81:             }
 }
 [e :U 2153 ]
-"80
-[; ;main.c: 80:         }
+"82
+[; ;main.c: 82:         }
 }
 [e :U 2147 ]
 "50
 [; ;main.c: 50:         while(fox_hunt) {
 [e $ != -> _fox_hunt `i -> 0 `i 2148  ]
 [e :U 2149 ]
-"81
-[; ;main.c: 81:     }
+"83
+[; ;main.c: 83:     }
 }
 [e :U 2138 ]
 [e $U 2139  ]
 [e :U 2140 ]
-"82
-[; ;main.c: 82: }
+"84
+[; ;main.c: 84: }
 [e :UE 2137 ]
 }
-"84
-[; ;main.c: 84: void initialize_pins(void) {
+"86
+[; ;main.c: 86: void initialize_pins(void) {
 [v _initialize_pins `(v ~T0 @X0 1 ef ]
 {
 [e :U _initialize_pins ]
 [f ]
-"85
-[; ;main.c: 85:     ANSELA = 0x00;
-[e = _ANSELA -> -> 0 `i `uc ]
-"86
-[; ;main.c: 86:     TRISAbits.TRISA0 = 1;
-[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
 "87
-[; ;main.c: 87:     TRISAbits.TRISA1 = 0;
-[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+[; ;main.c: 87:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
 "88
-[; ;main.c: 88:     TRISCbits.TRISC4 = 0;
-[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 88:     TRISAbits.TRISA0 = 1;
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
 "89
-[; ;main.c: 89: }
+[; ;main.c: 89:     TRISAbits.TRISA1 = 0;
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+"90
+[; ;main.c: 90:     TRISCbits.TRISC4 = 0;
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+"91
+[; ;main.c: 91:     PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+"93
+[; ;main.c: 93: }
 [e :UE 2157 ]
 }
-"91
-[; ;main.c: 91: void initialize_interrupts(void) {
+"95
+[; ;main.c: 95: void initialize_interrupts(void) {
 [v _initialize_interrupts `(v ~T0 @X0 1 ef ]
 {
 [e :U _initialize_interrupts ]
 [f ]
-"92
-[; ;main.c: 92:     INTCON0bits.IPEN = 0;
-[e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
-"93
-[; ;main.c: 93:     INTCON0bits.GIE = 1;
-[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
-"94
-[; ;main.c: 94:     PIE4bits.TMR1IE = 1;
-[e = . . _PIE4bits 0 0 -> -> 1 `i `uc ]
-"95
-[; ;main.c: 95:     TMR1IF = 0;
-[e = _TMR1IF -> -> 0 `i `b ]
 "96
-[; ;main.c: 96: }
+[; ;main.c: 96:     INTCON0bits.IPEN = 0;
+[e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
+"97
+[; ;main.c: 97:     INTCON0bits.GIE = 1;
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"98
+[; ;main.c: 98:     PIE4bits.TMR1IE = 1;
+[e = . . _PIE4bits 0 0 -> -> 1 `i `uc ]
+"99
+[; ;main.c: 99:     TMR1IF = 0;
+[e = _TMR1IF -> -> 0 `i `b ]
+"100
+[; ;main.c: 100: }
 [e :UE 2158 ]
 }
-"98
-[; ;main.c: 98: void configure_timer(void) {
+"102
+[; ;main.c: 102: void configure_timer(void) {
 [v _configure_timer `(v ~T0 @X0 1 ef ]
 {
 [e :U _configure_timer ]
 [f ]
-"99
-[; ;main.c: 99:     T1CONbits.CKPS = 0b11;
+"103
+[; ;main.c: 103:     T1CONbits.CKPS = 0b11;
 [e = . . _T1CONbits 0 4 -> -> 3 `i `uc ]
-"100
-[; ;main.c: 100:     T1CLKbits.CS = 0b0001;
+"104
+[; ;main.c: 104:     T1CLKbits.CS = 0b0001;
 [e = . . _T1CLKbits 0 0 -> -> 1 `i `uc ]
-"101
-[; ;main.c: 101:     T1GCONbits.GE = 0;
+"105
+[; ;main.c: 105:     T1GCONbits.GE = 0;
 [e = . . _T1GCONbits 0 6 -> -> 0 `i `uc ]
-"102
-[; ;main.c: 102: }
+"106
+[; ;main.c: 106: }
 [e :UE 2159 ]
 }
 [v $root$_TMR1_ISR `(v ~T0 @X0 0 e ]
-"104
-[; ;main.c: 104: void __attribute__((picinterrupt(("irq(32)")))) TMR1_ISR(void) {
+"108
+[; ;main.c: 108: void __attribute__((picinterrupt(("irq(32)")))) TMR1_ISR(void) {
 [v _TMR1_ISR `(v ~T1 @X0 1 ef ]
 {
 [e :U _TMR1_ISR ]
 [f ]
-"105
-[; ;main.c: 105:     TMR1IF = 0;
+"109
+[; ;main.c: 109:     TMR1IF = 0;
 [e = _TMR1IF -> -> 0 `i `b ]
-"106
-[; ;main.c: 106:     transmit_change = 1;
+"110
+[; ;main.c: 110:     transmit_change = 1;
 [e = _transmit_change -> -> 1 `i `a ]
-"107
-[; ;main.c: 107:     transmit = !transmit;
+"111
+[; ;main.c: 111:     transmit = !transmit;
 [e = _transmit -> -> ! != -> _transmit `i -> 0 `i `i `a ]
-"108
-[; ;main.c: 108: }
+"112
+[; ;main.c: 112: }
 [e :UE 2160 ]
 }
 [a 1C 71 111 111 100 32 108 117 99 107 0 ]
 [a 2C 78 48 77 67 87 0 ]
 [a 4C 78 48 77 67 87 0 ]
-[a 3C 79 75 0 ]
+[a 3C 79 75 32 0 ]

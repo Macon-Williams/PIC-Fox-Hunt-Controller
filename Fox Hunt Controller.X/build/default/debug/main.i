@@ -25696,13 +25696,13 @@ void ditspace(void);
 void dahspace(void);
 # 10 "main.c" 2
 # 21 "main.c"
-int dit_length;
+_Bool fox_hunt, transmit_change, transmit;
+void initialize_interrupts(void);
+void initialize_pins(void);
+void configure_timer(void);
 
 void main(void) {
-    ANSELA = 0x00;
-    TRISAbits.TRISA0 = 1;
-    TRISAbits.TRISA1 = 0;
-    TRISCbits.TRISC4 = 0;
+    initialize_pins();
 
 
     while(1) {
@@ -25710,38 +25710,45 @@ void main(void) {
         CPUDOZEbits.DOZE = 0b011;
         CPUDOZEbits.DOZEN = 1;
         while(!PORTAbits.RA0);
-        _delay((unsigned long)((1)*(31000UL/4000.0)));
         while(PORTAbits.RA0);
-
         CPUDOZEbits.DOZEN = 0;
 
         initialize_tone_generator(31000UL, 550);
         initialize_cw(60);
-
-        _Bool fox_hunt, transmit_change, transmit = 1;
-        cw_message("N0MCW", sizeof("N0MCW"));
+        fox_hunt = 1;
+        transmit_change = 1;
+        transmit = 1;
+        PORTAbits.RA1 = 1;
+        cw_message("Good luck", 9);
         deinitialize_cw();
-        while(1);
+        initialize_interrupts();
+        configure_timer();
+
 
         while(fox_hunt) {
+
             if (transmit_change) {
+                T1CONbits.ON = 0;
                 if (transmit) {
                     PORTAbits.RA1 = 1;
                 } else {
+                    initialize_cw(60);
                     cw_message("N0MCW", sizeof("N0MCW"));
+                    _delay((unsigned long)((500)*(31000UL/4000.0)));
                     PORTAbits.RA1 = 0;
+                    deinitialize_cw();
                 }
                 transmit_change = 0;
-
+                TMR1H = 0x1C;
+                TMR1L = 0xF2;
+                T1CONbits.ON = 1;
             }
 
-
-            transmit_change = 1;
-            transmit = !transmit;
 
             if (PORTAbits.RA0) {
                 while(PORTAbits.RA0);
                 _delay((unsigned long)((500)*(31000UL/4000.0)));
+                initialize_cw(60);
                 cw_message("OK", 2);
                 cw_message("N0MCW", sizeof("N0MCW"));
                 deinitialize_cw();
@@ -25750,4 +25757,32 @@ void main(void) {
             }
         }
     }
+}
+
+void initialize_pins(void) {
+    ANSELA = 0x00;
+    TRISAbits.TRISA0 = 1;
+    TRISAbits.TRISA1 = 0;
+    TRISCbits.TRISC4 = 0;
+    PORTAbits.RA1 = 0;
+
+}
+
+void initialize_interrupts(void) {
+    INTCON0bits.IPEN = 0;
+    INTCON0bits.GIE = 1;
+    PIE4bits.TMR1IE = 1;
+    TMR1IF = 0;
+}
+
+void configure_timer(void) {
+    T1CONbits.CKPS = 0b11;
+    T1CLKbits.CS = 0b0001;
+    T1GCONbits.GE = 0;
+}
+
+void __attribute__((picinterrupt(("irq(32)")))) TMR1_ISR(void) {
+    TMR1IF = 0;
+    transmit_change = 1;
+    transmit = !transmit;
 }

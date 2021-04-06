@@ -1,31 +1,9 @@
 Version 4.0 HI-TECH Software Intermediate Code
 [p mainexit ]
-"7716 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 7716: extern volatile unsigned char ANSELA __attribute__((address(0x3A40)));
-[v _ANSELA `Vuc ~T0 @X0 0 e@14912 ]
-"44246
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44246:     struct {
-[s S2010 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2010 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
-"44245
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44245: typedef union {
-[u S2009 `S2010 1 ]
-[n S2009 . . ]
-"44257
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44257: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x3FC2)));
-[v _TRISAbits `VS2009 ~T0 @X0 0 e@16322 ]
-"44370
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44370:     struct {
-[s S2014 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S2014 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
-"44369
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44369: typedef union {
-[u S2013 `S2014 1 ]
-[n S2013 . . ]
-"44381
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44381: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x3FC4)));
-[v _TRISCbits `VS2013 ~T0 @X0 0 e@16324 ]
-"5148
+"23 main.c
+[; ;main.c: 23: void initialize_pins(void);
+[v _initialize_pins `(v ~T0 @X0 0 ef ]
+"5148 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 5148:     struct {
 [s S230 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S230 . DOZE . DOE ROI DOZEN IDLEN ]
@@ -55,10 +33,6 @@ Version 4.0 HI-TECH Software Intermediate Code
 "44450
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44450: extern volatile PORTAbits_t PORTAbits __attribute__((address(0x3FCA)));
 [v _PORTAbits `VS2015 ~T0 @X0 0 e@16330 ]
-[v F15227 `(v ~T0 @X0 1 tf1`ul ]
-"203 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
-[v __delay `JF15227 ~T0 @X0 0 e ]
-[p i __delay ]
 "13 ./tone_generator.h
 [; ;./tone_generator.h: 13: void initialize_tone_generator(float osc_freq, float pwm_freq);
 [v _initialize_tone_generator `(v ~T0 @X0 0 ef2`f`f ]
@@ -71,9 +45,146 @@ Version 4.0 HI-TECH Software Intermediate Code
 "20
 [; ;./cw.h: 20: void deinitialize_cw(void);
 [v _deinitialize_cw `(v ~T0 @X0 0 ef ]
+"22 main.c
+[; ;main.c: 22: void initialize_interrupts(void);
+[v _initialize_interrupts `(v ~T0 @X0 0 ef ]
+"24
+[; ;main.c: 24: void configure_timer(void);
+[v _configure_timer `(v ~T0 @X0 0 ef ]
+"42547 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42547:     struct {
+[s S1940 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 ]
+[n S1940 . ON RD16 NOT_SYNC . CKPS ]
+"42554
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42554:     struct {
+[s S1941 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1941 . TMR1ON T1RD16 NOT_T1SYNC . T1CKPS0 T1CKPS1 ]
+"42562
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42562:     struct {
+[s S1942 :4 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1942 . . CKPS0 CKPS1 ]
+"42567
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42567:     struct {
+[s S1943 :1 `uc 1 :1 `uc 1 ]
+[n S1943 . . RD161 ]
+"42546
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42546: typedef union {
+[u S1939 `S1940 1 `S1941 1 `S1942 1 `S1943 1 ]
+[n S1939 . . . . . ]
+"42572
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42572: extern volatile T1CONbits_t T1CONbits __attribute__((address(0x3FB2)));
+[v _T1CONbits `VS1939 ~T0 @X0 0 e@16306 ]
+[v F15227 `(v ~T0 @X0 1 tf1`ul ]
+"203 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\pic18.h
+[v __delay `JF15227 ~T0 @X0 0 e ]
+[p i __delay ]
+"42466 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42466: extern volatile unsigned char TMR1H __attribute__((address(0x3FB1)));
+[v _TMR1H `Vuc ~T0 @X0 0 e@16305 ]
+"42396
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42396: extern volatile unsigned char TMR1L __attribute__((address(0x3FB0)));
+[v _TMR1L `Vuc ~T0 @X0 0 e@16304 ]
 "15 ./tone_generator.h
 [; ;./tone_generator.h: 15: void deinitialize_tone_generator(void);
 [v _deinitialize_tone_generator `(v ~T0 @X0 0 ef ]
+"7716 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 7716: extern volatile unsigned char ANSELA __attribute__((address(0x3A40)));
+[v _ANSELA `Vuc ~T0 @X0 0 e@14912 ]
+"44246
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44246:     struct {
+[s S2010 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2010 . TRISA0 TRISA1 TRISA2 TRISA3 TRISA4 TRISA5 TRISA6 TRISA7 ]
+"44245
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44245: typedef union {
+[u S2009 `S2010 1 ]
+[n S2009 . . ]
+"44257
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44257: extern volatile TRISAbits_t TRISAbits __attribute__((address(0x3FC2)));
+[v _TRISAbits `VS2009 ~T0 @X0 0 e@16322 ]
+"44370
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44370:     struct {
+[s S2014 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2014 . TRISC0 TRISC1 TRISC2 TRISC3 TRISC4 TRISC5 TRISC6 TRISC7 ]
+"44369
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44369: typedef union {
+[u S2013 `S2014 1 ]
+[n S2013 . . ]
+"44381
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44381: extern volatile TRISCbits_t TRISCbits __attribute__((address(0x3FC4)));
+[v _TRISCbits `VS2013 ~T0 @X0 0 e@16324 ]
+"44712
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44712:     struct {
+[s S2030 :1 `uc 1 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S2030 . INT0EDG INT1EDG INT2EDG . IPEN GIEL GIE ]
+"44721
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44721:     struct {
+[s S2031 :7 `uc 1 :1 `uc 1 ]
+[n S2031 . . GIEH ]
+"44711
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44711: typedef union {
+[u S2029 `S2030 1 `S2031 1 ]
+[n S2029 . . . ]
+"44726
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 44726: extern volatile INTCON0bits_t INTCON0bits __attribute__((address(0x3FD2)));
+[v _INTCON0bits `VS2029 ~T0 @X0 0 e@16338 ]
+"3754
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 3754:     struct {
+[s S168 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S168 . TMR1IE TMR1GIE TMR2IE CCP1IE . NCO1IE CWG1IE CLC1IE ]
+"3753
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 3753: typedef union {
+[u S167 `S168 1 ]
+[n S167 . . ]
+"3765
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 3765: extern volatile PIE4bits_t PIE4bits __attribute__((address(0x3994)));
+[v _PIE4bits `VS167 ~T0 @X0 0 e@14740 ]
+"55181
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 55181: extern volatile __bit TMR1IF __attribute__((address(0x1CD20)));
+[v _TMR1IF `Vb ~T0 @X0 0 e@118048 ]
+"43117
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 43117:     struct {
+[s S1968 :8 `uc 1 ]
+[n S1968 . CS ]
+"43120
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 43120:     struct {
+[s S1969 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1969 . T1CS0 T1CS1 T1CS2 T1CS3 T1CS4 ]
+"43127
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 43127:     struct {
+[s S1970 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1970 . CS0 CS1 CS2 CS3 CS4 ]
+"43116
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 43116: typedef union {
+[u S1967 `S1968 1 `S1969 1 `S1970 1 ]
+[n S1967 . . . . ]
+"43135
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 43135: extern volatile T1CLKbits_t T1CLKbits __attribute__((address(0x3FB5)));
+[v _T1CLKbits `VS1967 ~T0 @X0 0 e@16309 ]
+"42737
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42737:     struct {
+[s S1950 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1950 . . GVAL GGO GSPM GTM GPOL GE ]
+"42746
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42746:     struct {
+[s S1951 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1951 . . T1GVAL T1GGO T1GSPM T1GTM T1GPOL T1GE ]
+"42755
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42755:     struct {
+[s S1952 :3 `uc 1 :1 `uc 1 ]
+[n S1952 . . NOT_DONE ]
+"42759
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42759:     struct {
+[s S1953 :3 `uc 1 :1 `uc 1 ]
+[n S1953 . . NOT_T1DONE ]
+"42736
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42736: typedef union {
+[u S1949 `S1950 1 `S1951 1 `S1952 1 `S1953 1 ]
+[n S1949 . . . . . ]
+"42764
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 42764: extern volatile T1GCONbits_t T1GCONbits __attribute__((address(0x3FB3)));
+[v _T1GCONbits `VS1949 ~T0 @X0 0 e@16307 ]
+[t ~ __interrupt . k ]
+[t T1 __interrupt irq ( 32 ) ]
 "14 ./config.h
 [p x FEXTOSC  =  OFF      ]
 "15
@@ -2263,27 +2374,20 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./cw.h: 16: int dit_length;
 [v _dit_length `i ~T0 @X0 1 e ]
 "21 main.c
-[; ;main.c: 21: int dit_length;
-[v _dit_length `i ~T0 @X0 1 e ]
+[; ;main.c: 21: _Bool fox_hunt, transmit_change, transmit;
+[v _fox_hunt `a ~T0 @X0 1 e ]
+[v _transmit_change `a ~T0 @X0 1 e ]
+[v _transmit `a ~T0 @X0 1 e ]
 [v $root$_main `(v ~T0 @X0 0 e ]
-"23
-[; ;main.c: 23: void main(void) {
+"26
+[; ;main.c: 26: void main(void) {
 [v _main `(v ~T0 @X0 1 ef ]
 {
 [e :U _main ]
 [f ]
-"24
-[; ;main.c: 24:     ANSELA = 0x00;
-[e = _ANSELA -> -> 0 `i `uc ]
-"25
-[; ;main.c: 25:     TRISAbits.TRISA0 = 1;
-[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
-"26
-[; ;main.c: 26:     TRISAbits.TRISA1 = 0;
-[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
 "27
-[; ;main.c: 27:     TRISCbits.TRISC4 = 0;
-[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+[; ;main.c: 27:     initialize_pins();
+[e ( _initialize_pins ..  ]
 "30
 [; ;main.c: 30:     while(1) {
 [e :U 2139 ]
@@ -2302,139 +2406,243 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $ ! != -> . . _PORTAbits 0 0 `i -> 0 `i 2142  ]
 [e :U 2143 ]
 "35
-[; ;main.c: 35:         _delay((unsigned long)((1)*(31000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 1 `i `d / -> -> 31000 `ul `d .4000.0 `ul ]
-"36
-[; ;main.c: 36:         while(PORTAbits.RA0);
+[; ;main.c: 35:         while(PORTAbits.RA0);
 [e $U 2144  ]
 [e :U 2145 ]
 [e :U 2144 ]
 [e $ != -> . . _PORTAbits 0 0 `i -> 0 `i 2145  ]
 [e :U 2146 ]
-"38
-[; ;main.c: 38:         CPUDOZEbits.DOZEN = 0;
+"36
+[; ;main.c: 36:         CPUDOZEbits.DOZEN = 0;
 [e = . . _CPUDOZEbits 0 4 -> -> 0 `i `uc ]
-"40
-[; ;main.c: 40:         initialize_tone_generator(31000UL, 550);
+"38
+[; ;main.c: 38:         initialize_tone_generator(31000UL, 550);
 [e ( _initialize_tone_generator (2 , -> -> 31000 `ul `f -> -> 550 `i `f ]
-"41
-[; ;main.c: 41:         initialize_cw(60);
+"39
+[; ;main.c: 39:         initialize_cw(60);
 [e ( _initialize_cw (1 -> 60 `i ]
-"43
-[; ;main.c: 43:         _Bool fox_hunt, transmit_change, transmit = 1;
-[v _fox_hunt `a ~T0 @X0 1 a ]
-[v _transmit_change `a ~T0 @X0 1 a ]
-[v _transmit `a ~T0 @X0 1 a ]
+"40
+[; ;main.c: 40:         fox_hunt = 1;
+[e = _fox_hunt -> -> 1 `i `a ]
+"41
+[; ;main.c: 41:         transmit_change = 1;
+[e = _transmit_change -> -> 1 `i `a ]
+"42
+[; ;main.c: 42:         transmit = 1;
 [e = _transmit -> -> 1 `i `a ]
+"43
+[; ;main.c: 43:         PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
 "44
-[; ;main.c: 44:         cw_message("beans", 5);
-[e ( _cw_message (2 , :s 1C -> -> 5 `i `ui ]
+[; ;main.c: 44:         cw_message("Good luck", 9);
+[e ( _cw_message (2 , :s 1C -> -> 9 `i `ui ]
 "45
 [; ;main.c: 45:         deinitialize_cw();
 [e ( _deinitialize_cw ..  ]
 "46
-[; ;main.c: 46:         while(1);
-[e :U 2148 ]
-[e :U 2147 ]
-[e $U 2148  ]
-[e :U 2149 ]
-"48
-[; ;main.c: 48:         while(fox_hunt) {
-[e $U 2150  ]
-[e :U 2151 ]
-{
-"49
-[; ;main.c: 49:             if (transmit_change) {
-[e $ ! != -> _transmit_change `i -> 0 `i 2153  ]
-{
+[; ;main.c: 46:         initialize_interrupts();
+[e ( _initialize_interrupts ..  ]
+"47
+[; ;main.c: 47:         configure_timer();
+[e ( _configure_timer ..  ]
 "50
-[; ;main.c: 50:                 if (transmit) {
-[e $ ! != -> _transmit `i -> 0 `i 2154  ]
+[; ;main.c: 50:         while(fox_hunt) {
+[e $U 2147  ]
+[e :U 2148 ]
 {
-"51
-[; ;main.c: 51:                     PORTAbits.RA1 = 1;
-[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
 "52
-[; ;main.c: 52:                 } else {
-}
-[e $U 2155  ]
-[e :U 2154 ]
+[; ;main.c: 52:             if (transmit_change) {
+[e $ ! != -> _transmit_change `i -> 0 `i 2150  ]
 {
 "53
-[; ;main.c: 53:                     cw_message("N0MCW", sizeof("N0MCW"));
-[e ( _cw_message (2 , :s 2C -> 6 `ui ]
+[; ;main.c: 53:                 T1CONbits.ON = 0;
+[e = . . _T1CONbits 0 0 -> -> 0 `i `uc ]
 "54
-[; ;main.c: 54:                     PORTAbits.RA1 = 0;
-[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
-"55
-[; ;main.c: 55:                 }
-}
-[e :U 2155 ]
-"56
-[; ;main.c: 56:                 transmit_change = 0;
-[e = _transmit_change -> -> 0 `i `a ]
-"58
-[; ;main.c: 58:             }
-}
-[e :U 2153 ]
-"61
-[; ;main.c: 61:             transmit_change = 1;
-[e = _transmit_change -> -> 1 `i `a ]
-"62
-[; ;main.c: 62:             transmit = !transmit;
-[e = _transmit -> -> ! != -> _transmit `i -> 0 `i `i `a ]
-"64
-[; ;main.c: 64:             if (PORTAbits.RA0) {
-[e $ ! != -> . . _PORTAbits 0 0 `i -> 0 `i 2156  ]
+[; ;main.c: 54:                 if (transmit) {
+[e $ ! != -> _transmit `i -> 0 `i 2151  ]
 {
-"65
-[; ;main.c: 65:                 while(PORTAbits.RA0);
-[e $U 2157  ]
-[e :U 2158 ]
-[e :U 2157 ]
-[e $ != -> . . _PORTAbits 0 0 `i -> 0 `i 2158  ]
-[e :U 2159 ]
-"66
-[; ;main.c: 66:                 _delay((unsigned long)((500)*(31000UL/4000.0)));
-[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 31000 `ul `d .4000.0 `ul ]
-"67
-[; ;main.c: 67:                 cw_message("OK", 2);
-[e ( _cw_message (2 , :s 3C -> -> 2 `i `ui ]
-"68
-[; ;main.c: 68:                 cw_message("N0MCW", sizeof("N0MCW"));
-[e ( _cw_message (2 , :s 4C -> 6 `ui ]
-"69
-[; ;main.c: 69:                 deinitialize_cw();
-[e ( _deinitialize_cw ..  ]
-"70
-[; ;main.c: 70:                 deinitialize_tone_generator();
-[e ( _deinitialize_tone_generator ..  ]
-"71
-[; ;main.c: 71:                 fox_hunt = 0;
-[e = _fox_hunt -> -> 0 `i `a ]
-"72
-[; ;main.c: 72:             }
+"55
+[; ;main.c: 55:                     PORTAbits.RA1 = 1;
+[e = . . _PORTAbits 0 1 -> -> 1 `i `uc ]
+"56
+[; ;main.c: 56:                 } else {
 }
-[e :U 2156 ]
-"73
-[; ;main.c: 73:         }
+[e $U 2152  ]
+[e :U 2151 ]
+{
+"57
+[; ;main.c: 57:                     initialize_cw(60);
+[e ( _initialize_cw (1 -> 60 `i ]
+"58
+[; ;main.c: 58:                     cw_message("N0MCW", sizeof("N0MCW"));
+[e ( _cw_message (2 , :s 2C -> 6 `ui ]
+"59
+[; ;main.c: 59:                     _delay((unsigned long)((500)*(31000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 31000 `ul `d .4000.0 `ul ]
+"60
+[; ;main.c: 60:                     PORTAbits.RA1 = 0;
+[e = . . _PORTAbits 0 1 -> -> 0 `i `uc ]
+"61
+[; ;main.c: 61:                     deinitialize_cw();
+[e ( _deinitialize_cw ..  ]
+"62
+[; ;main.c: 62:                 }
+}
+[e :U 2152 ]
+"63
+[; ;main.c: 63:                 transmit_change = 0;
+[e = _transmit_change -> -> 0 `i `a ]
+"64
+[; ;main.c: 64:                 TMR1H = 0x1C;
+[e = _TMR1H -> -> 28 `i `uc ]
+"65
+[; ;main.c: 65:                 TMR1L = 0xF2;
+[e = _TMR1L -> -> 242 `i `uc ]
+"66
+[; ;main.c: 66:                 T1CONbits.ON = 1;
+[e = . . _T1CONbits 0 0 -> -> 1 `i `uc ]
+"67
+[; ;main.c: 67:             }
 }
 [e :U 2150 ]
-"48
-[; ;main.c: 48:         while(fox_hunt) {
-[e $ != -> _fox_hunt `i -> 0 `i 2151  ]
-[e :U 2152 ]
+"70
+[; ;main.c: 70:             if (PORTAbits.RA0) {
+[e $ ! != -> . . _PORTAbits 0 0 `i -> 0 `i 2153  ]
+{
+"71
+[; ;main.c: 71:                 while(PORTAbits.RA0);
+[e $U 2154  ]
+[e :U 2155 ]
+[e :U 2154 ]
+[e $ != -> . . _PORTAbits 0 0 `i -> 0 `i 2155  ]
+[e :U 2156 ]
+"72
+[; ;main.c: 72:                 _delay((unsigned long)((500)*(31000UL/4000.0)));
+[e ( __delay (1 -> * -> -> 500 `i `d / -> -> 31000 `ul `d .4000.0 `ul ]
+"73
+[; ;main.c: 73:                 initialize_cw(60);
+[e ( _initialize_cw (1 -> 60 `i ]
 "74
-[; ;main.c: 74:     }
+[; ;main.c: 74:                 cw_message("OK", 2);
+[e ( _cw_message (2 , :s 3C -> -> 2 `i `ui ]
+"75
+[; ;main.c: 75:                 cw_message("N0MCW", sizeof("N0MCW"));
+[e ( _cw_message (2 , :s 4C -> 6 `ui ]
+"76
+[; ;main.c: 76:                 deinitialize_cw();
+[e ( _deinitialize_cw ..  ]
+"77
+[; ;main.c: 77:                 deinitialize_tone_generator();
+[e ( _deinitialize_tone_generator ..  ]
+"78
+[; ;main.c: 78:                 fox_hunt = 0;
+[e = _fox_hunt -> -> 0 `i `a ]
+"79
+[; ;main.c: 79:             }
+}
+[e :U 2153 ]
+"80
+[; ;main.c: 80:         }
+}
+[e :U 2147 ]
+"50
+[; ;main.c: 50:         while(fox_hunt) {
+[e $ != -> _fox_hunt `i -> 0 `i 2148  ]
+[e :U 2149 ]
+"81
+[; ;main.c: 81:     }
 }
 [e :U 2138 ]
 [e $U 2139  ]
 [e :U 2140 ]
-"75
-[; ;main.c: 75: }
+"82
+[; ;main.c: 82: }
 [e :UE 2137 ]
 }
-[a 1C 98 101 97 110 115 0 ]
+"84
+[; ;main.c: 84: void initialize_pins(void) {
+[v _initialize_pins `(v ~T0 @X0 1 ef ]
+{
+[e :U _initialize_pins ]
+[f ]
+"85
+[; ;main.c: 85:     ANSELA = 0x00;
+[e = _ANSELA -> -> 0 `i `uc ]
+"86
+[; ;main.c: 86:     TRISAbits.TRISA0 = 1;
+[e = . . _TRISAbits 0 0 -> -> 1 `i `uc ]
+"87
+[; ;main.c: 87:     TRISAbits.TRISA1 = 0;
+[e = . . _TRISAbits 0 1 -> -> 0 `i `uc ]
+"88
+[; ;main.c: 88:     TRISCbits.TRISC4 = 0;
+[e = . . _TRISCbits 0 4 -> -> 0 `i `uc ]
+"89
+[; ;main.c: 89: }
+[e :UE 2157 ]
+}
+"91
+[; ;main.c: 91: void initialize_interrupts(void) {
+[v _initialize_interrupts `(v ~T0 @X0 1 ef ]
+{
+[e :U _initialize_interrupts ]
+[f ]
+"92
+[; ;main.c: 92:     INTCON0bits.IPEN = 0;
+[e = . . _INTCON0bits 0 4 -> -> 0 `i `uc ]
+"93
+[; ;main.c: 93:     INTCON0bits.GIE = 1;
+[e = . . _INTCON0bits 0 6 -> -> 1 `i `uc ]
+"94
+[; ;main.c: 94:     PIE4bits.TMR1IE = 1;
+[e = . . _PIE4bits 0 0 -> -> 1 `i `uc ]
+"95
+[; ;main.c: 95:     TMR1IF = 0;
+[e = _TMR1IF -> -> 0 `i `b ]
+"96
+[; ;main.c: 96: }
+[e :UE 2158 ]
+}
+"98
+[; ;main.c: 98: void configure_timer(void) {
+[v _configure_timer `(v ~T0 @X0 1 ef ]
+{
+[e :U _configure_timer ]
+[f ]
+"99
+[; ;main.c: 99:     T1CONbits.CKPS = 0b11;
+[e = . . _T1CONbits 0 4 -> -> 3 `i `uc ]
+"100
+[; ;main.c: 100:     T1CLKbits.CS = 0b0001;
+[e = . . _T1CLKbits 0 0 -> -> 1 `i `uc ]
+"101
+[; ;main.c: 101:     T1GCONbits.GE = 0;
+[e = . . _T1GCONbits 0 6 -> -> 0 `i `uc ]
+"102
+[; ;main.c: 102: }
+[e :UE 2159 ]
+}
+[v $root$_TMR1_ISR `(v ~T0 @X0 0 e ]
+"104
+[; ;main.c: 104: void __attribute__((picinterrupt(("irq(32)")))) TMR1_ISR(void) {
+[v _TMR1_ISR `(v ~T1 @X0 1 ef ]
+{
+[e :U _TMR1_ISR ]
+[f ]
+"105
+[; ;main.c: 105:     TMR1IF = 0;
+[e = _TMR1IF -> -> 0 `i `b ]
+"106
+[; ;main.c: 106:     transmit_change = 1;
+[e = _transmit_change -> -> 1 `i `a ]
+"107
+[; ;main.c: 107:     transmit = !transmit;
+[e = _transmit -> -> ! != -> _transmit `i -> 0 `i `i `a ]
+"108
+[; ;main.c: 108: }
+[e :UE 2160 ]
+}
+[a 1C 71 111 111 100 32 108 117 99 107 0 ]
 [a 2C 78 48 77 67 87 0 ]
 [a 4C 78 48 77 67 87 0 ]
 [a 3C 79 75 0 ]

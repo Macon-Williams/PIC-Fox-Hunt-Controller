@@ -3341,18 +3341,18 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e :U 2225 ]
 [e $ != -> . . _T4CONbits 0 2 `i -> 0 `i 2226  ]
 [e :U 2227 ]
-"176
-[; ;cw.c: 176: }
+"173
+[; ;cw.c: 173: }
 [e :UE 2224 ]
 }
-"178
-[; ;cw.c: 178: void dahspace() {
+"175
+[; ;cw.c: 175: void dahspace() {
 [v _dahspace `(v ~T0 @X0 1 ef ]
 {
 [e :U _dahspace ]
 [f ]
-"179
-[; ;cw.c: 179:     for (int i = 0; i < 3; i++) {
+"176
+[; ;cw.c: 176:     for (int i = 0; i < 3; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
@@ -3360,17 +3360,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e $U 2230  ]
 [e :U 2229 ]
 {
-"180
-[; ;cw.c: 180:         ditspace();
+"177
+[; ;cw.c: 177:         ditspace();
 [e ( _ditspace ..  ]
-"181
-[; ;cw.c: 181:     }
+"178
+[; ;cw.c: 178:     }
 }
 [e ++ _i -> 1 `i ]
 [e $ < _i -> 3 `i 2229  ]
 [e :U 2230 ]
 }
-"182
-[; ;cw.c: 182: }
+"179
+[; ;cw.c: 179: }
 [e :UE 2228 ]
 }

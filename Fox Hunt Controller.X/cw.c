@@ -170,9 +170,6 @@ void dit() {
 void ditspace() {
     T4CONbits.ON        = 1;        // Start timer 4
     while(T4CONbits.ON);            // Wait for the postscaler select bit
-    //T4CONbits.ON        = 0;        // Stop timer 4
-    //T4CONbits.OUTPS     = 0x00;     // Reset postscaler bits
-  // Gotta use timers
 }
 
 void dahspace() {

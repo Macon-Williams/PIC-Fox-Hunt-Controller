@@ -25643,9 +25643,6 @@ void dit() {
 void ditspace() {
     T4CONbits.ON = 1;
     while(T4CONbits.ON);
-
-
-
 }
 
 void dahspace() {

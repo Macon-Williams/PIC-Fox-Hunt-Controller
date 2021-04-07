@@ -25651,11 +25651,11 @@ extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 9 "main.c" 2
 
 # 1 "./cw.h" 1
-# 10 "./cw.h"
+# 13 "./cw.h"
 # 1 "./tone_generator.h" 1
-# 11 "./tone_generator.h"
+# 12 "./tone_generator.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
-# 11 "./tone_generator.h" 2
+# 12 "./tone_generator.h" 2
 
 
 void initialize_tone_generator(float osc_freq, float pwm_freq);
@@ -25663,7 +25663,7 @@ void initialize_tone_generator(float osc_freq, float pwm_freq);
 void deinitialize_tone_generator(void);
 
 void tone_enable(_Bool tone_active);
-# 10 "./cw.h" 2
+# 13 "./cw.h" 2
 
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stddef.h" 1 3
 # 19 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stddef.h" 3
@@ -25671,15 +25671,12 @@ void tone_enable(_Bool tone_active);
 # 132 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
 typedef long ptrdiff_t;
 # 19 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stddef.h" 2 3
-# 11 "./cw.h" 2
-
-
-
+# 14 "./cw.h" 2
 
 
 int dit_length;
 
-void initialize_cw(int speed);
+void initialize_cw(void);
 
 void deinitialize_cw(void);
 
@@ -25695,7 +25692,7 @@ void ditspace(void);
 
 void dahspace(void);
 # 10 "main.c" 2
-# 21 "main.c"
+# 20 "main.c"
 _Bool fox_hunt, transmit_change, transmit;
 
 void end_foxhunt(void);
@@ -25719,7 +25716,7 @@ void main(void) {
         CPUDOZEbits.DOZEN = 0;
 
         initialize_tone_generator(31000UL, 550);
-        initialize_cw(60);
+        initialize_cw();
         fox_hunt = 1;
         transmit_change = 1;
         transmit = 1;
@@ -25767,7 +25764,7 @@ void cycle_transmitter(void) {
         if (transmit) {
             PORTAbits.RA1 = 1;
         } else {
-            initialize_cw(60);
+            initialize_cw();
             cw_message("N0MCW", sizeof("N0MCW"));
             _delay((unsigned long)((500)*(31000UL/4000.0)));
             PORTAbits.RA1 = 0;
@@ -25786,7 +25783,7 @@ void end_foxhunt(void) {
         while(PORTAbits.RA0);
         PORTAbits.RA1 = 1;
         _delay((unsigned long)((500)*(31000UL/4000.0)));
-        initialize_cw(60);
+        initialize_cw();
         cw_message("OK ", 2);
         cw_message("N0MCW", sizeof("N0MCW"));
         deinitialize_cw();

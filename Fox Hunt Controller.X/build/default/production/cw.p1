@@ -1,165 +1,165 @@
 Version 4.0 HI-TECH Software Intermediate Code
 "20739 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20739:     struct {
-[s S905 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S905 . CLSYNC CLPOL . CHSYNC CHPOL ]
+[s S910 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S910 . CLSYNC CLPOL . CHSYNC CHPOL ]
 "20746
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20746:     struct {
-[s S906 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S906 . MD1CLSYNC MD1CLPOL . MD1CHSYNC MD1CHPOL ]
+[s S911 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S911 . MD1CLSYNC MD1CLPOL . MD1CHSYNC MD1CHPOL ]
 "20738
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20738: typedef union {
-[u S904 `S905 1 `S906 1 ]
-[n S904 . . . ]
+[u S909 `S910 1 `S911 1 ]
+[n S909 . . . ]
 "20754
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20754: extern volatile MD1CON1bits_t MD1CON1bits __attribute__((address(0x3CFB)));
-[v _MD1CON1bits `VS904 ~T0 @X0 0 e@15611 ]
+[v _MD1CON1bits `VS909 ~T0 @X0 0 e@15611 ]
 "20989
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20989:     struct {
-[s S918 :5 `uc 1 ]
-[n S918 . CH ]
+[s S923 :5 `uc 1 ]
+[n S923 . CH ]
 "20992
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20992:     struct {
-[s S919 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S919 . CH0 CH1 CH2 CH3 CH4 ]
+[s S924 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S924 . CH0 CH1 CH2 CH3 CH4 ]
 "20999
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20999:     struct {
-[s S920 :5 `uc 1 ]
-[n S920 . MD1CH ]
+[s S925 :5 `uc 1 ]
+[n S925 . MD1CH ]
 "21002
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 21002:     struct {
-[s S921 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S921 . MD1CH0 MD1CH1 MD1CH2 MD1CH3 MD1CH4 ]
+[s S926 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S926 . MD1CH0 MD1CH1 MD1CH2 MD1CH3 MD1CH4 ]
 "20988
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20988: typedef union {
-[u S917 `S918 1 `S919 1 `S920 1 `S921 1 ]
-[n S917 . . . . . ]
+[u S922 `S923 1 `S924 1 `S925 1 `S926 1 ]
+[n S922 . . . . . ]
 "21010
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 21010: extern volatile MD1CARHbits_t MD1CARHbits __attribute__((address(0x3CFE)));
-[v _MD1CARHbits `VS917 ~T0 @X0 0 e@15614 ]
+[v _MD1CARHbits `VS922 ~T0 @X0 0 e@15614 ]
 "20805
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20805:     struct {
-[s S908 :5 `uc 1 ]
-[n S908 . MS ]
+[s S913 :5 `uc 1 ]
+[n S913 . MS ]
 "20808
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20808:     struct {
-[s S909 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S909 . MS0 MS1 MS2 MS3 MS4 ]
+[s S914 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S914 . MS0 MS1 MS2 MS3 MS4 ]
 "20815
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20815:     struct {
-[s S910 :5 `uc 1 ]
-[n S910 . MD1MS ]
+[s S915 :5 `uc 1 ]
+[n S915 . MD1MS ]
 "20818
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20818:     struct {
-[s S911 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S911 . MD1MS0 MD1MS1 MD1MS2 MD1MS3 MD1MS4 ]
+[s S916 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S916 . MD1MS0 MD1MS1 MD1MS2 MD1MS3 MD1MS4 ]
 "20804
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20804: typedef union {
-[u S907 `S908 1 `S909 1 `S910 1 `S911 1 ]
-[n S907 . . . . . ]
+[u S912 `S913 1 `S914 1 `S915 1 `S916 1 ]
+[n S912 . . . . . ]
 "20826
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20826: extern volatile MD1SRCbits_t MD1SRCbits __attribute__((address(0x3CFC)));
-[v _MD1SRCbits `VS907 ~T0 @X0 0 e@15612 ]
+[v _MD1SRCbits `VS912 ~T0 @X0 0 e@15612 ]
 "7516
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 7516: extern volatile unsigned char RC4PPS __attribute__((address(0x3A14)));
 [v _RC4PPS `Vuc ~T0 @X0 0 e@14868 ]
 "20671
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20671:     struct {
-[s S902 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S902 . BIT . OPOL OUT . EN ]
+[s S907 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S907 . BIT . OPOL OUT . EN ]
 "20679
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20679:     struct {
-[s S903 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S903 . MD1BIT . MD1OPOL MD1OUT . MD1EN ]
+[s S908 :1 `uc 1 :3 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S908 . MD1BIT . MD1OPOL MD1OUT . MD1EN ]
 "20670
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20670: typedef union {
-[u S901 `S902 1 `S903 1 ]
-[n S901 . . . ]
+[u S906 `S907 1 `S908 1 ]
+[n S906 . . . ]
 "20688
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 20688: extern volatile MD1CON0bits_t MD1CON0bits __attribute__((address(0x3CFA)));
-[v _MD1CON0bits `VS901 ~T0 @X0 0 e@15610 ]
+[v _MD1CON0bits `VS906 ~T0 @X0 0 e@15610 ]
 "40754
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40754:     struct {
-[s S1844 :4 `uc 1 ]
-[n S1844 . CS ]
+[s S1849 :4 `uc 1 ]
+[n S1849 . CS ]
 "40757
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40757:     struct {
-[s S1845 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1845 . CS0 CS1 CS2 CS3 ]
+[s S1850 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1850 . CS0 CS1 CS2 CS3 ]
 "40763
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40763:     struct {
-[s S1846 :4 `uc 1 ]
-[n S1846 . T4CS ]
+[s S1851 :4 `uc 1 ]
+[n S1851 . T4CS ]
 "40766
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40766:     struct {
-[s S1847 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1847 . T4CS0 T4CS1 T4CS2 T4CS3 ]
+[s S1852 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1852 . T4CS0 T4CS1 T4CS2 T4CS3 ]
 "40753
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40753: typedef union {
-[u S1843 `S1844 1 `S1845 1 `S1846 1 `S1847 1 ]
-[n S1843 . . . . . ]
+[u S1848 `S1849 1 `S1850 1 `S1851 1 `S1852 1 ]
+[n S1848 . . . . . ]
 "40773
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40773: extern volatile T4CLKbits_t T4CLKbits __attribute__((address(0x3FA2)));
-[v _T4CLKbits `VS1843 ~T0 @X0 0 e@16290 ]
+[v _T4CLKbits `VS1848 ~T0 @X0 0 e@16290 ]
 "40402
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40402:     struct {
-[s S1829 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S1829 . OUTPS CKPS ON ]
+[s S1834 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S1834 . OUTPS CKPS ON ]
 "40407
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40407:     struct {
-[s S1830 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
-[n S1830 . T4OUTPS T4CKPS T4ON ]
+[s S1835 :4 `uc 1 :3 `uc 1 :1 `uc 1 ]
+[n S1835 . T4OUTPS T4CKPS T4ON ]
 "40412
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40412:     struct {
-[s S1831 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1831 . T4OUTPS0 T4OUTPS1 T4OUTPS2 T4OUTPS3 T4CKPS0 T4CKPS1 T4CKPS2 ]
+[s S1836 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1836 . T4OUTPS0 T4OUTPS1 T4OUTPS2 T4OUTPS3 T4CKPS0 T4CKPS1 T4CKPS2 ]
 "40421
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40421:     struct {
-[s S1832 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1832 . OUTPS0 OUTPS1 OUTPS2 OUTPS3 CKPS0 CKPS1 CKPS2 TMR4ON ]
+[s S1837 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1837 . OUTPS0 OUTPS1 OUTPS2 OUTPS3 CKPS0 CKPS1 CKPS2 TMR4ON ]
 "40401
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40401: typedef union {
-[u S1828 `S1829 1 `S1830 1 `S1831 1 `S1832 1 ]
-[n S1828 . . . . . ]
-"40432
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40432: extern volatile T4CONbits_t T4CONbits __attribute__((address(0x3FA0)));
-[v _T4CONbits `VS1828 ~T0 @X0 0 e@16288 ]
-"40369
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40369:     struct {
-[s S1825 :8 `uc 1 ]
-[n S1825 . PR4 ]
-"40368
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40368: typedef union {
-[u S1824 `S1825 1 ]
-[n S1824 . . ]
-"40373
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40373: extern volatile T4PRbits_t T4PRbits __attribute__((address(0x3F9F)));
-[v _T4PRbits `VS1824 ~T0 @X0 0 e@16287 ]
-"40548
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40548:     struct {
-[s S1834 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1834 . MODE CKSYNC CKPOL PSYNC ]
-"40554
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40554:     struct {
-[s S1835 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1835 . MODE0 MODE1 MODE2 MODE3 MODE4 ]
-"40561
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40561:     struct {
-[s S1836 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1836 . T4MODE T4CKSYNC T4CKPOL T4PSYNC ]
-"40567
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40567:     struct {
-[s S1837 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
-[n S1837 . T4MODE0 T4MODE1 T4MODE2 T4MODE3 T4MODE4 ]
-"40547
-[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40547: typedef union {
 [u S1833 `S1834 1 `S1835 1 `S1836 1 `S1837 1 ]
 [n S1833 . . . . . ]
+"40432
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40432: extern volatile T4CONbits_t T4CONbits __attribute__((address(0x3FA0)));
+[v _T4CONbits `VS1833 ~T0 @X0 0 e@16288 ]
+"40369
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40369:     struct {
+[s S1830 :8 `uc 1 ]
+[n S1830 . PR4 ]
+"40368
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40368: typedef union {
+[u S1829 `S1830 1 ]
+[n S1829 . . ]
+"40373
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40373: extern volatile T4PRbits_t T4PRbits __attribute__((address(0x3F9F)));
+[v _T4PRbits `VS1829 ~T0 @X0 0 e@16287 ]
+"40548
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40548:     struct {
+[s S1839 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1839 . MODE CKSYNC CKPOL PSYNC ]
+"40554
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40554:     struct {
+[s S1840 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1840 . MODE0 MODE1 MODE2 MODE3 MODE4 ]
+"40561
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40561:     struct {
+[s S1841 :5 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1841 . T4MODE T4CKSYNC T4CKPOL T4PSYNC ]
+"40567
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40567:     struct {
+[s S1842 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1842 . T4MODE0 T4MODE1 T4MODE2 T4MODE3 T4MODE4 ]
+"40547
+[; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40547: typedef union {
+[u S1838 `S1839 1 `S1840 1 `S1841 1 `S1842 1 ]
+[n S1838 . . . . . ]
 "40575
 [; ;C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h: 40575: extern volatile T4HLTbits_t T4HLTbits __attribute__((address(0x3FA1)));
-[v _T4HLTbits `VS1833 ~T0 @X0 0 e@16289 ]
-"17 ./tone_generator.h
-[; ;./tone_generator.h: 17: void tone_enable(_Bool tone_active);
+[v _T4HLTbits `VS1838 ~T0 @X0 0 e@16289 ]
+"18 ./tone_generator.h
+[; ;./tone_generator.h: 18: void tone_enable(_Bool tone_active);
 [v _tone_enable `(v ~T0 @X0 0 ef1`a ]
 "24 ./cw.h
 [; ;./cw.h: 24: void cw(char character);
@@ -2301,11 +2301,10 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;./cw.h: 16: int dit_length;
 [v _dit_length `i ~T0 @X0 1 e ]
 "10 cw.c
-[; ;cw.c: 10: void initialize_cw(int speed) {
-[v _initialize_cw `(v ~T0 @X0 1 ef1`i ]
+[; ;cw.c: 10: void initialize_cw() {
+[v _initialize_cw `(v ~T0 @X0 1 ef ]
 {
 [e :U _initialize_cw ]
-[v _speed `i ~T0 @X0 1 r1 ]
 [f ]
 "11
 [; ;cw.c: 11:     MD1CON1bits.CHSYNC = 0;
@@ -2341,458 +2340,392 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;cw.c: 22:     tone_enable(1);
 [e ( _tone_enable (1 -> -> 1 `i `a ]
 "23
-[; ;cw.c: 23:     dit_length = speed;
-[e = _dit_length _speed ]
-"24
-[; ;cw.c: 24: }
-[e :UE 2132 ]
+[; ;cw.c: 23: }
+[e :UE 2137 ]
 }
-"26
-[; ;cw.c: 26: void deinitialize_cw() {
+"25
+[; ;cw.c: 25: void deinitialize_cw() {
 [v _deinitialize_cw `(v ~T0 @X0 1 ef ]
 {
 [e :U _deinitialize_cw ]
 [f ]
-"27
-[; ;cw.c: 27:     MD1CON0bits.EN = 0;
+"26
+[; ;cw.c: 26:     MD1CON0bits.EN = 0;
 [e = . . _MD1CON0bits 0 5 -> -> 0 `i `uc ]
-"28
-[; ;cw.c: 28:     tone_enable(0);
+"27
+[; ;cw.c: 27:     tone_enable(0);
 [e ( _tone_enable (1 -> -> 0 `i `a ]
-"29
-[; ;cw.c: 29: }
-[e :UE 2133 ]
+"28
+[; ;cw.c: 28: }
+[e :UE 2138 ]
 }
-"31
-[; ;cw.c: 31: void cw_message(char message[], size_t message_size) {
+"30
+[; ;cw.c: 30: void cw_message(char message[], size_t message_size) {
 [v _cw_message `(v ~T0 @X0 1 ef2`*uc`ui ]
 {
 [e :U _cw_message ]
 [v _message `*uc ~T0 @X0 1 r1 ]
 [v _message_size `ui ~T0 @X0 1 r2 ]
 [f ]
-"32
-[; ;cw.c: 32:     for (int i = 0; i < message_size; i++) {
+"31
+[; ;cw.c: 31:     for (int i = 0; i < message_size; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $U 2138  ]
-[e :U 2135 ]
+[e $U 2143  ]
+[e :U 2140 ]
 {
-"33
-[; ;cw.c: 33:         cw(message[i]);
+"32
+[; ;cw.c: 32:         cw(message[i]);
 [e ( _cw (1 *U + _message * -> _i `x -> -> # *U _message `i `x ]
-"34
-[; ;cw.c: 34:     }
+"33
+[; ;cw.c: 33:     }
 }
 [e ++ _i -> 1 `i ]
-[e :U 2138 ]
-[e $ < -> _i `ui _message_size 2135  ]
-[e :U 2136 ]
+[e :U 2143 ]
+[e $ < -> _i `ui _message_size 2140  ]
+[e :U 2141 ]
 }
+"34
+[; ;cw.c: 34:     dahspace(); dahspace();
+[e ( _dahspace ..  ]
+[e ( _dahspace ..  ]
 "35
-[; ;cw.c: 35:     dahspace(); dahspace();
-[e ( _dahspace ..  ]
-[e ( _dahspace ..  ]
-"36
-[; ;cw.c: 36: }
-[e :UE 2134 ]
+[; ;cw.c: 35: }
+[e :UE 2139 ]
 }
-"38
-[; ;cw.c: 38: void cw(char character) {
+"37
+[; ;cw.c: 37: void cw(char character) {
 [v _cw `(v ~T0 @X0 1 ef1`uc ]
 {
 [e :U _cw ]
 [v _character `uc ~T0 @X0 1 r1 ]
 [f ]
-"39
-[; ;cw.c: 39:   switch(character){
-[e $U 2141  ]
+"38
+[; ;cw.c: 38:   switch(character){
+[e $U 2146  ]
 {
-"42
-[; ;cw.c: 42:     case 'A': case 'a':
-[e :U 2142 ]
-[e :U 2143 ]
-"43
-[; ;cw.c: 43:         dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"44
-[; ;cw.c: 44:     case 'B': case 'b':
-[e :U 2144 ]
-[e :U 2145 ]
-"45
-[; ;cw.c: 45:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"46
-[; ;cw.c: 46:     case 'C': case 'c':
-[e :U 2146 ]
+"41
+[; ;cw.c: 41:     case 'A': case 'a':
 [e :U 2147 ]
-"47
-[; ;cw.c: 47:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"48
-[; ;cw.c: 48:     case 'D': case 'd':
 [e :U 2148 ]
+"42
+[; ;cw.c: 42:         dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"43
+[; ;cw.c: 43:     case 'B': case 'b':
 [e :U 2149 ]
-"49
-[; ;cw.c: 49:         dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"50
-[; ;cw.c: 50:     case 'E': case 'e':
 [e :U 2150 ]
+"44
+[; ;cw.c: 44:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"45
+[; ;cw.c: 45:     case 'C': case 'c':
 [e :U 2151 ]
-"51
-[; ;cw.c: 51:         dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"52
-[; ;cw.c: 52:     case 'F': case 'f':
 [e :U 2152 ]
+"46
+[; ;cw.c: 46:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"47
+[; ;cw.c: 47:     case 'D': case 'd':
 [e :U 2153 ]
-"53
-[; ;cw.c: 53:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"54
-[; ;cw.c: 54:     case 'G': case 'g':
 [e :U 2154 ]
+"48
+[; ;cw.c: 48:         dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"49
+[; ;cw.c: 49:     case 'E': case 'e':
 [e :U 2155 ]
-"55
-[; ;cw.c: 55:         dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"56
-[; ;cw.c: 56:     case 'H': case 'h':
 [e :U 2156 ]
+"50
+[; ;cw.c: 50:         dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"51
+[; ;cw.c: 51:     case 'F': case 'f':
 [e :U 2157 ]
-"57
-[; ;cw.c: 57:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"58
-[; ;cw.c: 58:     case 'I': case 'i':
 [e :U 2158 ]
+"52
+[; ;cw.c: 52:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"53
+[; ;cw.c: 53:     case 'G': case 'g':
 [e :U 2159 ]
-"59
-[; ;cw.c: 59:         dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"60
-[; ;cw.c: 60:     case 'J': case 'j':
 [e :U 2160 ]
+"54
+[; ;cw.c: 54:         dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"55
+[; ;cw.c: 55:     case 'H': case 'h':
 [e :U 2161 ]
-"61
-[; ;cw.c: 61:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"62
-[; ;cw.c: 62:     case 'K': case 'k':
 [e :U 2162 ]
+"56
+[; ;cw.c: 56:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"57
+[; ;cw.c: 57:     case 'I': case 'i':
 [e :U 2163 ]
-"63
-[; ;cw.c: 63:         dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"64
-[; ;cw.c: 64:     case 'L': case 'l':
 [e :U 2164 ]
+"58
+[; ;cw.c: 58:         dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"59
+[; ;cw.c: 59:     case 'J': case 'j':
 [e :U 2165 ]
-"65
-[; ;cw.c: 65:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"66
-[; ;cw.c: 66:     case 'M': case 'm':
 [e :U 2166 ]
+"60
+[; ;cw.c: 60:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"61
+[; ;cw.c: 61:     case 'K': case 'k':
 [e :U 2167 ]
-"67
-[; ;cw.c: 67:         dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"68
-[; ;cw.c: 68:     case 'N': case 'n':
 [e :U 2168 ]
+"62
+[; ;cw.c: 62:         dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"63
+[; ;cw.c: 63:     case 'L': case 'l':
 [e :U 2169 ]
-"69
-[; ;cw.c: 69:         dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"70
-[; ;cw.c: 70:     case 'O': case 'o':
 [e :U 2170 ]
+"64
+[; ;cw.c: 64:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"65
+[; ;cw.c: 65:     case 'M': case 'm':
 [e :U 2171 ]
-"71
-[; ;cw.c: 71:         dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"72
-[; ;cw.c: 72:     case 'P': case 'p':
 [e :U 2172 ]
+"66
+[; ;cw.c: 66:         dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"67
+[; ;cw.c: 67:     case 'N': case 'n':
 [e :U 2173 ]
-"73
-[; ;cw.c: 73:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"74
-[; ;cw.c: 74:     case 'Q': case 'q':
 [e :U 2174 ]
+"68
+[; ;cw.c: 68:         dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"69
+[; ;cw.c: 69:     case 'O': case 'o':
 [e :U 2175 ]
-"75
-[; ;cw.c: 75:         dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"76
-[; ;cw.c: 76:     case 'R': case 'r':
 [e :U 2176 ]
+"70
+[; ;cw.c: 70:         dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"71
+[; ;cw.c: 71:     case 'P': case 'p':
 [e :U 2177 ]
-"77
-[; ;cw.c: 77:         dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"78
-[; ;cw.c: 78:     case 'S': case 's':
 [e :U 2178 ]
+"72
+[; ;cw.c: 72:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"73
+[; ;cw.c: 73:     case 'Q': case 'q':
 [e :U 2179 ]
-"79
-[; ;cw.c: 79:         dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"80
-[; ;cw.c: 80:     case 'T': case 't':
 [e :U 2180 ]
+"74
+[; ;cw.c: 74:         dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"75
+[; ;cw.c: 75:     case 'R': case 'r':
 [e :U 2181 ]
-"81
-[; ;cw.c: 81:         dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"82
-[; ;cw.c: 82:     case 'U': case 'u':
 [e :U 2182 ]
+"76
+[; ;cw.c: 76:         dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"77
+[; ;cw.c: 77:     case 'S': case 's':
 [e :U 2183 ]
-"83
-[; ;cw.c: 83:         dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"84
-[; ;cw.c: 84:     case 'V': case 'v':
 [e :U 2184 ]
+"78
+[; ;cw.c: 78:         dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"79
+[; ;cw.c: 79:     case 'T': case 't':
 [e :U 2185 ]
-"85
-[; ;cw.c: 85:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"86
-[; ;cw.c: 86:     case 'W': case 'w':
 [e :U 2186 ]
+"80
+[; ;cw.c: 80:         dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"81
+[; ;cw.c: 81:     case 'U': case 'u':
 [e :U 2187 ]
-"87
-[; ;cw.c: 87:         dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"88
-[; ;cw.c: 88:     case 'X': case 'x':
 [e :U 2188 ]
+"82
+[; ;cw.c: 82:         dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"83
+[; ;cw.c: 83:     case 'V': case 'v':
 [e :U 2189 ]
-"89
-[; ;cw.c: 89:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"90
-[; ;cw.c: 90:     case 'Y': case 'y':
 [e :U 2190 ]
+"84
+[; ;cw.c: 84:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"85
+[; ;cw.c: 85:     case 'W': case 'w':
 [e :U 2191 ]
-"91
-[; ;cw.c: 91:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"92
-[; ;cw.c: 92:     case 'Z': case 'z':
 [e :U 2192 ]
+"86
+[; ;cw.c: 86:         dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"87
+[; ;cw.c: 87:     case 'X': case 'x':
 [e :U 2193 ]
-"93
-[; ;cw.c: 93:         dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"96
-[; ;cw.c: 96:     case '1':
 [e :U 2194 ]
-"97
-[; ;cw.c: 97:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+"88
+[; ;cw.c: 88:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"98
-[; ;cw.c: 98:     case '2':
+[e $U 2145  ]
+"89
+[; ;cw.c: 89:     case 'Y': case 'y':
 [e :U 2195 ]
-"99
-[; ;cw.c: 99:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"100
-[; ;cw.c: 100:     case '3':
 [e :U 2196 ]
-"101
-[; ;cw.c: 101:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+"90
+[; ;cw.c: 90:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
@@ -2800,142 +2733,123 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"102
-[; ;cw.c: 102:     case '4':
+[e $U 2145  ]
+"91
+[; ;cw.c: 91:     case 'Z': case 'z':
 [e :U 2197 ]
-"103
-[; ;cw.c: 103:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"104
-[; ;cw.c: 104:     case '5':
 [e :U 2198 ]
-"105
-[; ;cw.c: 105:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
+"92
+[; ;cw.c: 92:         dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"106
-[; ;cw.c: 106:     case '6':
+[e $U 2145  ]
+"95
+[; ;cw.c: 95:     case '1':
 [e :U 2199 ]
-"107
-[; ;cw.c: 107:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+"96
+[; ;cw.c: 96:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"108
-[; ;cw.c: 108:     case '7':
+[e $U 2145  ]
+"97
+[; ;cw.c: 97:     case '2':
 [e :U 2200 ]
-"109
-[; ;cw.c: 109:         dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+"98
+[; ;cw.c: 98:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"110
-[; ;cw.c: 110:     case '8':
+[e $U 2145  ]
+"99
+[; ;cw.c: 99:     case '3':
 [e :U 2201 ]
-"111
-[; ;cw.c: 111:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
+"100
+[; ;cw.c: 100:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"112
-[; ;cw.c: 112:     case '9':
+[e $U 2145  ]
+"101
+[; ;cw.c: 101:     case '4':
 [e :U 2202 ]
-"113
-[; ;cw.c: 113:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
+"102
+[; ;cw.c: 102:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"114
-[; ;cw.c: 114:     case '0':
+[e $U 2145  ]
+"103
+[; ;cw.c: 103:     case '5':
 [e :U 2203 ]
-"115
-[; ;cw.c: 115:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
-[e ( _dah ..  ]
+"104
+[; ;cw.c: 104:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"118
-[; ;cw.c: 118:     case '.':
+[e $U 2145  ]
+"105
+[; ;cw.c: 105:     case '6':
 [e :U 2204 ]
-"119
-[; ;cw.c: 119:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
+"106
+[; ;cw.c: 106:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"120
-[; ;cw.c: 120:     case ',':
+[e $U 2145  ]
+"107
+[; ;cw.c: 107:     case '7':
 [e :U 2205 ]
-"121
-[; ;cw.c: 121:         dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+"108
+[; ;cw.c: 108:         dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
@@ -2944,19 +2858,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"122
-[; ;cw.c: 122:     case '?':
+[e $U 2145  ]
+"109
+[; ;cw.c: 109:     case '8':
 [e :U 2206 ]
-"123
-[; ;cw.c: 123:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+"110
+[; ;cw.c: 110:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
@@ -2966,411 +2876,497 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"124
-[; ;cw.c: 124:     case ':':
+[e $U 2145  ]
+"111
+[; ;cw.c: 111:     case '9':
 [e :U 2207 ]
-"125
-[; ;cw.c: 125:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+"112
+[; ;cw.c: 112:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"126
-[; ;cw.c: 126:     case '/':
+[e $U 2145  ]
+"113
+[; ;cw.c: 113:     case '0':
 [e :U 2208 ]
-"127
-[; ;cw.c: 127:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+"114
+[; ;cw.c: 114:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
 [e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"128
-[; ;cw.c: 128:     case '-':
+[e $U 2145  ]
+"117
+[; ;cw.c: 117:     case '.':
 [e :U 2209 ]
-"129
-[; ;cw.c: 129:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+"118
+[; ;cw.c: 118:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"130
-[; ;cw.c: 130:     case '=':
+[e $U 2145  ]
+"119
+[; ;cw.c: 119:     case ',':
 [e :U 2210 ]
-"131
-[; ;cw.c: 131:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+"120
+[; ;cw.c: 120:         dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"132
-[; ;cw.c: 132:     case '\'':
+[e $U 2145  ]
+"121
+[; ;cw.c: 121:     case '?':
 [e :U 2211 ]
-"133
-[; ;cw.c: 133:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+"122
+[; ;cw.c: 122:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"134
-[; ;cw.c: 134:     case '(': case ')':
+[e $U 2145  ]
+"123
+[; ;cw.c: 123:     case ':':
 [e :U 2212 ]
+"124
+[; ;cw.c: 124:         dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"125
+[; ;cw.c: 125:     case '/':
 [e :U 2213 ]
-"135
-[; ;cw.c: 135:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+"126
+[; ;cw.c: 126:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
 [e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
 [e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"136
-[; ;cw.c: 136:     case '_':
+[e $U 2145  ]
+"127
+[; ;cw.c: 127:     case '-':
 [e :U 2214 ]
-"137
-[; ;cw.c: 137:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+"128
+[; ;cw.c: 128:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"138
-[; ;cw.c: 138:     case '!':
+[e $U 2145  ]
+"129
+[; ;cw.c: 129:     case '=':
 [e :U 2215 ]
-"139
-[; ;cw.c: 139:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+"130
+[; ;cw.c: 130:         dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
-[e ( _dah ..  ]
+[e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"140
-[; ;cw.c: 140:     case '&':
+[e $U 2145  ]
+"131
+[; ;cw.c: 131:     case '\'':
 [e :U 2216 ]
-"141
-[; ;cw.c: 141:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+"132
+[; ;cw.c: 132:         dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"142
-[; ;cw.c: 142:     case '\"':
+[e $U 2145  ]
+"133
+[; ;cw.c: 133:     case '(': case ')':
 [e :U 2217 ]
-"143
-[; ;cw.c: 143:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
-[e ( _dah ..  ]
-[e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _dahspace ..  ]
-[e $U 2140  ]
-"144
-[; ;cw.c: 144:     case ';':
 [e :U 2218 ]
-"145
-[; ;cw.c: 145:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+"134
+[; ;cw.c: 134:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"146
-[; ;cw.c: 146:     case '$':
+[e $U 2145  ]
+"135
+[; ;cw.c: 135:     case '_':
 [e :U 2219 ]
-"147
-[; ;cw.c: 147:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
-[e ( _dit ..  ]
-[e ( _ditspace ..  ]
+"136
+[; ;cw.c: 136:         dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _ditspace ..  ]
-[e ( _dit ..  ]
+[e ( _dah ..  ]
 [e ( _ditspace ..  ]
 [e ( _dit ..  ]
 [e ( _ditspace ..  ]
 [e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e $U 2140  ]
-"148
-[; ;cw.c: 148:     case ' ':
+[e $U 2145  ]
+"137
+[; ;cw.c: 137:     case '!':
 [e :U 2220 ]
-"149
-[; ;cw.c: 149:         dahspace(); dahspace();
+"138
+[; ;cw.c: 138:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
 [e ( _dahspace ..  ]
-[e ( _dahspace ..  ]
-"150
-[; ;cw.c: 150:         break;
-[e $U 2140  ]
-"153
-[; ;cw.c: 153:     default:
+[e $U 2145  ]
+"139
+[; ;cw.c: 139:     case '&':
 [e :U 2221 ]
+"140
+[; ;cw.c: 140:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"141
+[; ;cw.c: 141:     case '\"':
+[e :U 2222 ]
+"142
+[; ;cw.c: 142:         dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"143
+[; ;cw.c: 143:     case ';':
+[e :U 2223 ]
+"144
+[; ;cw.c: 144:         dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"145
+[; ;cw.c: 145:     case '$':
+[e :U 2224 ]
+"146
+[; ;cw.c: 146:         dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dit ..  ]
+[e ( _ditspace ..  ]
+[e ( _dah ..  ]
+[e ( _dahspace ..  ]
+[e $U 2145  ]
+"147
+[; ;cw.c: 147:     case ' ':
+[e :U 2225 ]
+"148
+[; ;cw.c: 148:         dahspace(); dahspace();
+[e ( _dahspace ..  ]
+[e ( _dahspace ..  ]
+"149
+[; ;cw.c: 149:         break;
+[e $U 2145  ]
+"152
+[; ;cw.c: 152:     default:
+[e :U 2226 ]
+"153
+[; ;cw.c: 153:         dahspace(); dahspace();
+[e ( _dahspace ..  ]
+[e ( _dahspace ..  ]
 "154
-[; ;cw.c: 154:         dahspace(); dahspace();
-[e ( _dahspace ..  ]
-[e ( _dahspace ..  ]
+[; ;cw.c: 154:   }
+}
+[e $U 2145  ]
+[e :U 2146 ]
+[e [\ -> _character `i , $ -> -> 65 `ui `i 2147
+ , $ -> -> 97 `ui `i 2148
+ , $ -> -> 66 `ui `i 2149
+ , $ -> -> 98 `ui `i 2150
+ , $ -> -> 67 `ui `i 2151
+ , $ -> -> 99 `ui `i 2152
+ , $ -> -> 68 `ui `i 2153
+ , $ -> -> 100 `ui `i 2154
+ , $ -> -> 69 `ui `i 2155
+ , $ -> -> 101 `ui `i 2156
+ , $ -> -> 70 `ui `i 2157
+ , $ -> -> 102 `ui `i 2158
+ , $ -> -> 71 `ui `i 2159
+ , $ -> -> 103 `ui `i 2160
+ , $ -> -> 72 `ui `i 2161
+ , $ -> -> 104 `ui `i 2162
+ , $ -> -> 73 `ui `i 2163
+ , $ -> -> 105 `ui `i 2164
+ , $ -> -> 74 `ui `i 2165
+ , $ -> -> 106 `ui `i 2166
+ , $ -> -> 75 `ui `i 2167
+ , $ -> -> 107 `ui `i 2168
+ , $ -> -> 76 `ui `i 2169
+ , $ -> -> 108 `ui `i 2170
+ , $ -> -> 77 `ui `i 2171
+ , $ -> -> 109 `ui `i 2172
+ , $ -> -> 78 `ui `i 2173
+ , $ -> -> 110 `ui `i 2174
+ , $ -> -> 79 `ui `i 2175
+ , $ -> -> 111 `ui `i 2176
+ , $ -> -> 80 `ui `i 2177
+ , $ -> -> 112 `ui `i 2178
+ , $ -> -> 81 `ui `i 2179
+ , $ -> -> 113 `ui `i 2180
+ , $ -> -> 82 `ui `i 2181
+ , $ -> -> 114 `ui `i 2182
+ , $ -> -> 83 `ui `i 2183
+ , $ -> -> 115 `ui `i 2184
+ , $ -> -> 84 `ui `i 2185
+ , $ -> -> 116 `ui `i 2186
+ , $ -> -> 85 `ui `i 2187
+ , $ -> -> 117 `ui `i 2188
+ , $ -> -> 86 `ui `i 2189
+ , $ -> -> 118 `ui `i 2190
+ , $ -> -> 87 `ui `i 2191
+ , $ -> -> 119 `ui `i 2192
+ , $ -> -> 88 `ui `i 2193
+ , $ -> -> 120 `ui `i 2194
+ , $ -> -> 89 `ui `i 2195
+ , $ -> -> 121 `ui `i 2196
+ , $ -> -> 90 `ui `i 2197
+ , $ -> -> 122 `ui `i 2198
+ , $ -> -> 49 `ui `i 2199
+ , $ -> -> 50 `ui `i 2200
+ , $ -> -> 51 `ui `i 2201
+ , $ -> -> 52 `ui `i 2202
+ , $ -> -> 53 `ui `i 2203
+ , $ -> -> 54 `ui `i 2204
+ , $ -> -> 55 `ui `i 2205
+ , $ -> -> 56 `ui `i 2206
+ , $ -> -> 57 `ui `i 2207
+ , $ -> -> 48 `ui `i 2208
+ , $ -> -> 46 `ui `i 2209
+ , $ -> -> 44 `ui `i 2210
+ , $ -> -> 63 `ui `i 2211
+ , $ -> -> 58 `ui `i 2212
+ , $ -> -> 47 `ui `i 2213
+ , $ -> -> 45 `ui `i 2214
+ , $ -> -> 61 `ui `i 2215
+ , $ -> -> 39 `ui `i 2216
+ , $ -> -> 40 `ui `i 2217
+ , $ -> -> 41 `ui `i 2218
+ , $ -> -> 95 `ui `i 2219
+ , $ -> -> 33 `ui `i 2220
+ , $ -> -> 38 `ui `i 2221
+ , $ -> -> 34 `ui `i 2222
+ , $ -> -> 59 `ui `i 2223
+ , $ -> -> 36 `ui `i 2224
+ , $ -> -> 32 `ui `i 2225
+ 2226 ]
+[e :U 2145 ]
 "155
-[; ;cw.c: 155:   }
+[; ;cw.c: 155: }
+[e :UE 2144 ]
 }
-[e $U 2140  ]
-[e :U 2141 ]
-[e [\ -> _character `i , $ -> -> 65 `ui `i 2142
- , $ -> -> 97 `ui `i 2143
- , $ -> -> 66 `ui `i 2144
- , $ -> -> 98 `ui `i 2145
- , $ -> -> 67 `ui `i 2146
- , $ -> -> 99 `ui `i 2147
- , $ -> -> 68 `ui `i 2148
- , $ -> -> 100 `ui `i 2149
- , $ -> -> 69 `ui `i 2150
- , $ -> -> 101 `ui `i 2151
- , $ -> -> 70 `ui `i 2152
- , $ -> -> 102 `ui `i 2153
- , $ -> -> 71 `ui `i 2154
- , $ -> -> 103 `ui `i 2155
- , $ -> -> 72 `ui `i 2156
- , $ -> -> 104 `ui `i 2157
- , $ -> -> 73 `ui `i 2158
- , $ -> -> 105 `ui `i 2159
- , $ -> -> 74 `ui `i 2160
- , $ -> -> 106 `ui `i 2161
- , $ -> -> 75 `ui `i 2162
- , $ -> -> 107 `ui `i 2163
- , $ -> -> 76 `ui `i 2164
- , $ -> -> 108 `ui `i 2165
- , $ -> -> 77 `ui `i 2166
- , $ -> -> 109 `ui `i 2167
- , $ -> -> 78 `ui `i 2168
- , $ -> -> 110 `ui `i 2169
- , $ -> -> 79 `ui `i 2170
- , $ -> -> 111 `ui `i 2171
- , $ -> -> 80 `ui `i 2172
- , $ -> -> 112 `ui `i 2173
- , $ -> -> 81 `ui `i 2174
- , $ -> -> 113 `ui `i 2175
- , $ -> -> 82 `ui `i 2176
- , $ -> -> 114 `ui `i 2177
- , $ -> -> 83 `ui `i 2178
- , $ -> -> 115 `ui `i 2179
- , $ -> -> 84 `ui `i 2180
- , $ -> -> 116 `ui `i 2181
- , $ -> -> 85 `ui `i 2182
- , $ -> -> 117 `ui `i 2183
- , $ -> -> 86 `ui `i 2184
- , $ -> -> 118 `ui `i 2185
- , $ -> -> 87 `ui `i 2186
- , $ -> -> 119 `ui `i 2187
- , $ -> -> 88 `ui `i 2188
- , $ -> -> 120 `ui `i 2189
- , $ -> -> 89 `ui `i 2190
- , $ -> -> 121 `ui `i 2191
- , $ -> -> 90 `ui `i 2192
- , $ -> -> 122 `ui `i 2193
- , $ -> -> 49 `ui `i 2194
- , $ -> -> 50 `ui `i 2195
- , $ -> -> 51 `ui `i 2196
- , $ -> -> 52 `ui `i 2197
- , $ -> -> 53 `ui `i 2198
- , $ -> -> 54 `ui `i 2199
- , $ -> -> 55 `ui `i 2200
- , $ -> -> 56 `ui `i 2201
- , $ -> -> 57 `ui `i 2202
- , $ -> -> 48 `ui `i 2203
- , $ -> -> 46 `ui `i 2204
- , $ -> -> 44 `ui `i 2205
- , $ -> -> 63 `ui `i 2206
- , $ -> -> 58 `ui `i 2207
- , $ -> -> 47 `ui `i 2208
- , $ -> -> 45 `ui `i 2209
- , $ -> -> 61 `ui `i 2210
- , $ -> -> 39 `ui `i 2211
- , $ -> -> 40 `ui `i 2212
- , $ -> -> 41 `ui `i 2213
- , $ -> -> 95 `ui `i 2214
- , $ -> -> 33 `ui `i 2215
- , $ -> -> 38 `ui `i 2216
- , $ -> -> 34 `ui `i 2217
- , $ -> -> 59 `ui `i 2218
- , $ -> -> 36 `ui `i 2219
- , $ -> -> 32 `ui `i 2220
- 2221 ]
-[e :U 2140 ]
-"156
-[; ;cw.c: 156: }
-[e :UE 2139 ]
-}
-"158
-[; ;cw.c: 158: void dah() {
+"157
+[; ;cw.c: 157: void dah() {
 [v _dah `(v ~T0 @X0 1 ef ]
 {
 [e :U _dah ]
 [f ]
-"159
-[; ;cw.c: 159:     MD1CON0bits.BIT = 1;
+"158
+[; ;cw.c: 158:     MD1CON0bits.BIT = 1;
 [e = . . _MD1CON0bits 0 0 -> -> 1 `i `uc ]
-"160
-[; ;cw.c: 160:     dahspace();
+"159
+[; ;cw.c: 159:     dahspace();
 [e ( _dahspace ..  ]
-"161
-[; ;cw.c: 161:     MD1CON0bits.BIT = 0;
+"160
+[; ;cw.c: 160:     MD1CON0bits.BIT = 0;
 [e = . . _MD1CON0bits 0 0 -> -> 0 `i `uc ]
-"162
-[; ;cw.c: 162: }
-[e :UE 2222 ]
+"161
+[; ;cw.c: 161: }
+[e :UE 2227 ]
 }
-"164
-[; ;cw.c: 164: void dit() {
+"163
+[; ;cw.c: 163: void dit() {
 [v _dit `(v ~T0 @X0 1 ef ]
 {
 [e :U _dit ]
 [f ]
-"165
-[; ;cw.c: 165:     MD1CON0bits.BIT = 1;
+"164
+[; ;cw.c: 164:     MD1CON0bits.BIT = 1;
 [e = . . _MD1CON0bits 0 0 -> -> 1 `i `uc ]
-"166
-[; ;cw.c: 166:     ditspace();
+"165
+[; ;cw.c: 165:     ditspace();
 [e ( _ditspace ..  ]
-"167
-[; ;cw.c: 167:     MD1CON0bits.BIT = 0;
+"166
+[; ;cw.c: 166:     MD1CON0bits.BIT = 0;
 [e = . . _MD1CON0bits 0 0 -> -> 0 `i `uc ]
-"168
-[; ;cw.c: 168: }
-[e :UE 2223 ]
+"167
+[; ;cw.c: 167: }
+[e :UE 2228 ]
 }
-"170
-[; ;cw.c: 170: void ditspace() {
+"169
+[; ;cw.c: 169: void ditspace() {
 [v _ditspace `(v ~T0 @X0 1 ef ]
 {
 [e :U _ditspace ]
 [f ]
-"171
-[; ;cw.c: 171:     T4CONbits.ON = 1;
+"170
+[; ;cw.c: 170:     T4CONbits.ON = 1;
 [e = . . _T4CONbits 0 2 -> -> 1 `i `uc ]
+"171
+[; ;cw.c: 171:     while(T4CONbits.ON);
+[e $U 2230  ]
+[e :U 2231 ]
+[e :U 2230 ]
+[e $ != -> . . _T4CONbits 0 2 `i -> 0 `i 2231  ]
+[e :U 2232 ]
 "172
-[; ;cw.c: 172:     while(T4CONbits.ON);
-[e $U 2225  ]
-[e :U 2226 ]
-[e :U 2225 ]
-[e $ != -> . . _T4CONbits 0 2 `i -> 0 `i 2226  ]
-[e :U 2227 ]
-"173
-[; ;cw.c: 173: }
-[e :UE 2224 ]
+[; ;cw.c: 172: }
+[e :UE 2229 ]
 }
-"175
-[; ;cw.c: 175: void dahspace() {
+"174
+[; ;cw.c: 174: void dahspace() {
 [v _dahspace `(v ~T0 @X0 1 ef ]
 {
 [e :U _dahspace ]
 [f ]
-"176
-[; ;cw.c: 176:     for (int i = 0; i < 3; i++) {
+"175
+[; ;cw.c: 175:     for (int i = 0; i < 3; i++) {
 {
 [v _i `i ~T0 @X0 1 a ]
 [e = _i -> 0 `i ]
-[e $ < _i -> 3 `i 2229  ]
-[e $U 2230  ]
-[e :U 2229 ]
+[e $ < _i -> 3 `i 2234  ]
+[e $U 2235  ]
+[e :U 2234 ]
 {
-"177
-[; ;cw.c: 177:         ditspace();
+"176
+[; ;cw.c: 176:         ditspace();
 [e ( _ditspace ..  ]
-"178
-[; ;cw.c: 178:     }
+"177
+[; ;cw.c: 177:     }
 }
 [e ++ _i -> 1 `i ]
-[e $ < _i -> 3 `i 2229  ]
-[e :U 2230 ]
+[e $ < _i -> 3 `i 2234  ]
+[e :U 2235 ]
 }
-"179
-[; ;cw.c: 179: }
-[e :UE 2228 ]
+"178
+[; ;cw.c: 178: }
+[e :UE 2233 ]
 }

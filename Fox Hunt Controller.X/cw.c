@@ -7,7 +7,7 @@
 
 #include "cw.h"
 
-void initialize_cw(int speed) {
+void initialize_cw() {
     MD1CON1bits.CHSYNC  = 0;
     MD1CON1bits.CLSYNC  = 0;
     MD1CARHbits.CH      = 0b01000;      // Carrier high is PWM5
@@ -15,12 +15,11 @@ void initialize_cw(int speed) {
     RC4PPS              = 0b101000;     // DSM should output on port RC4
     MD1CON0bits.EN      = 1;            // Enable DSM
     T4CLKbits.T4CS0     = 1;            // Timer 4 oscillator set to Fosc/4
-    T4CONbits.CKPS      = 0b110;        // Timer 4 1:64 prescaller set
+    T4CONbits.CKPS      = 0b110;        // Timer 4 1:64 prescaler set
     T4PRbits.PR4        = 0x7;          // Count up to 7 decimal (roughly 60 ms)
     T4HLTbits.MODE      = 0b01000;      // One shot timer
     
     tone_enable(true);
-    dit_length = speed;
 }
 
 void deinitialize_cw() {

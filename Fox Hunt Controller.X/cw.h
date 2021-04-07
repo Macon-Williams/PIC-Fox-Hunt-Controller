@@ -7,15 +7,15 @@
  * TODO: Add documentation
  */
 
-#include "tone_generator.h"
-#include <stddef.h>
-
 #ifndef CW_H
 #define	CW_H
 
+#include "tone_generator.h"
+#include <stddef.h>
+
 int dit_length;
 
-void initialize_cw(int speed);
+void initialize_cw(void);
 
 void deinitialize_cw(void);
 

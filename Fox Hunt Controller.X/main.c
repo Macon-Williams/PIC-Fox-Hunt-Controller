@@ -15,7 +15,6 @@
 #define PTT_PIN                 PORTAbits.RA1   // Raise high to turn on PTT
 
 #define CALLSIGN                "N0MCW"         // Amateur radio callsign here
-#define DIT_LENGTH              60              // CW speed, dit length in ms (roughly 20 wpm)
 #define TONE_FREQUENCY          550             // CW Tone frequency in Hz
 
 bool fox_hunt, transmit_change, transmit;
@@ -41,7 +40,7 @@ void main(void) {
         CPUDOZEbits.DOZEN   = 0;                // Bring CPU out of doze mode
         
         initialize_tone_generator(_XTAL_FREQ, TONE_FREQUENCY);      // Start PWM module to generate the CW
-        initialize_cw(DIT_LENGTH);                                  // Start the DSM module for CW timings
+        initialize_cw();                                            // Start the DSM module for CW timings
         fox_hunt = true;                        // Put us in the proper start position for the fox_hunt loop
         transmit_change = true; 
         transmit = true;
@@ -89,7 +88,7 @@ void cycle_transmitter(void) {
         if (transmit) {
             PTT_PIN = 1;                // Turn on the carrier signal
         } else {
-            initialize_cw(DIT_LENGTH);
+            initialize_cw();
             cw_message(CALLSIGN, sizeof(CALLSIGN));         // Identify after every transmission
             __delay_ms(500);
             PTT_PIN = 0;                // Turn off the carrier signal
@@ -108,7 +107,7 @@ void end_foxhunt(void) {
         while(COS_STATUS);              // Wait for user to unkey
         PTT_PIN     = 1;                // Enable PTT
         __delay_ms(500);
-        initialize_cw(DIT_LENGTH);
+        initialize_cw();
         cw_message("OK ", 2);            // User feedback, acknowledge the shutdown
         cw_message(CALLSIGN, sizeof(CALLSIGN));
         deinitialize_cw();

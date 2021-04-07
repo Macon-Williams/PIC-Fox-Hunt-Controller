@@ -25436,9 +25436,9 @@ void tone_enable(_Bool tone_active);
 
 
 void initialize_tone_generator(float osc_freq, float pwm_freq) {
-    unsigned int period_value = (((1/pwm_freq) * osc_freq)/4) - 0.5;
-    unsigned int duty_cycle = (2 * (period_value + 1)) + 0.5;
-    unsigned int duty_cycle_l;
+    unsigned char period_value = (((1/pwm_freq) * osc_freq)/4) - 0.5;
+    unsigned char duty_cycle = (2 * (period_value + 1)) + 0.5;
+    unsigned char duty_cycle_l;
 
     unsigned mask;
     mask = (1 << 2) - 1;
@@ -25455,12 +25455,7 @@ void initialize_tone_generator(float osc_freq, float pwm_freq) {
     T2CONbits.CKPS = 0b000;
     T2CONbits.ON = 1;
 
-
-
     while(!PIR4bits.TMR2IF);
-
-
-
 }
 
 void deinitialize_tone_generator() {

@@ -25697,12 +25697,17 @@ void dahspace(void);
 # 10 "main.c" 2
 # 21 "main.c"
 _Bool fox_hunt, transmit_change, transmit;
+
+void end_foxhunt(void);
+void cycle_transmitter(void);
 void initialize_interrupts(void);
 void initialize_pins(void);
 void configure_timer(void);
 
 void main(void) {
     initialize_pins();
+    initialize_interrupts();
+    configure_timer();
 
 
     while(1) {
@@ -25719,42 +25724,18 @@ void main(void) {
         transmit_change = 1;
         transmit = 1;
         PORTAbits.RA1 = 1;
+        _delay((unsigned long)((500)*(31000UL/4000.0)));
+
         cw_message("Good luck", 9);
         deinitialize_cw();
-        initialize_interrupts();
-        configure_timer();
 
 
         while(fox_hunt) {
 
-            if (transmit_change) {
-                T1CONbits.ON = 0;
-                if (transmit) {
-                    PORTAbits.RA1 = 1;
-                } else {
-                    initialize_cw(60);
-                    cw_message("N0MCW", sizeof("N0MCW"));
-                    _delay((unsigned long)((500)*(31000UL/4000.0)));
-                    PORTAbits.RA1 = 0;
-                    deinitialize_cw();
-                }
-                transmit_change = 0;
-                TMR1H = 0x1C;
-                TMR1L = 0xF2;
-                T1CONbits.ON = 1;
-            }
+            cycle_transmitter();
 
 
-            if (PORTAbits.RA0) {
-                while(PORTAbits.RA0);
-                _delay((unsigned long)((500)*(31000UL/4000.0)));
-                initialize_cw(60);
-                cw_message("OK", 2);
-                cw_message("N0MCW", sizeof("N0MCW"));
-                deinitialize_cw();
-                deinitialize_tone_generator();
-                fox_hunt = 0;
-            }
+            end_foxhunt();
         }
     }
 }
@@ -25765,7 +25746,6 @@ void initialize_pins(void) {
     TRISAbits.TRISA1 = 0;
     TRISCbits.TRISC4 = 0;
     PORTAbits.RA1 = 0;
-
 }
 
 void initialize_interrupts(void) {
@@ -25781,8 +25761,61 @@ void configure_timer(void) {
     T1GCONbits.GE = 0;
 }
 
-void __attribute__((picinterrupt(("irq(32)")))) TMR1_ISR(void) {
+void cycle_transmitter(void) {
+    if (transmit_change) {
+        T1CONbits.ON = 0;
+        if (transmit) {
+            PORTAbits.RA1 = 1;
+        } else {
+            initialize_cw(60);
+            cw_message("N0MCW", sizeof("N0MCW"));
+            _delay((unsigned long)((500)*(31000UL/4000.0)));
+            PORTAbits.RA1 = 0;
+            deinitialize_cw();
+        }
+        transmit_change = 0;
+        TMR1H = 0x1C;
+        TMR1L = 0xF2;
+        T1CONbits.ON = 1;
+    }
+}
+
+
+void end_foxhunt(void) {
+    if (PORTAbits.RA0) {
+        while(PORTAbits.RA0);
+        PORTAbits.RA1 = 1;
+        _delay((unsigned long)((500)*(31000UL/4000.0)));
+        initialize_cw(60);
+        cw_message("OK ", 2);
+        cw_message("N0MCW", sizeof("N0MCW"));
+        deinitialize_cw();
+        deinitialize_tone_generator();
+        _delay((unsigned long)((500)*(31000UL/4000.0)));
+        PORTAbits.RA1 = 0;
+        fox_hunt = 0;
+    }
+}
+
+void __attribute__((picinterrupt(("irq(TMR1), high_priority")))) TMR1_ISR(void) {
     TMR1IF = 0;
     transmit_change = 1;
     transmit = !transmit;
+}
+
+
+void __attribute__((picinterrupt(("irq(default), low_priority")))) DEFAULT_ISR(void) {
+
+
+
+    PIR1 = 0;
+    PIR2 = 0;
+    PIR3 = 0;
+    PIR4 &= ~(0b11111110);
+    PIR5 = 0;
+    PIR6 = 0;
+    PIR7 = 0;
+    PIR8 = 0;
+    PIR9 = 0;
+    PIR10 = 0;
 }

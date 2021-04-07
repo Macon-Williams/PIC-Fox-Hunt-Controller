@@ -2264,16 +2264,16 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _pwm_freq `f ~T0 @X0 1 r2 ]
 [f ]
 "12
-[; ;tone_generator.c: 12:     unsigned int period_value = (((1/pwm_freq) * osc_freq)/4) - 0.5;
-[v _period_value `ui ~T0 @X0 1 a ]
-[e = _period_value -> - -> / * / -> -> 1 `i `f _pwm_freq _osc_freq -> -> 4 `i `f `d .0.5 `ui ]
+[; ;tone_generator.c: 12:     unsigned char period_value = (((1/pwm_freq) * osc_freq)/4) - 0.5;
+[v _period_value `uc ~T0 @X0 1 a ]
+[e = _period_value -> - -> / * / -> -> 1 `i `f _pwm_freq _osc_freq -> -> 4 `i `f `d .0.5 `uc ]
 "13
-[; ;tone_generator.c: 13:     unsigned int duty_cycle = (2 * (period_value + 1)) + 0.5;
-[v _duty_cycle `ui ~T0 @X0 1 a ]
-[e = _duty_cycle -> + -> * -> -> 2 `i `ui + _period_value -> -> 1 `i `ui `d .0.5 `ui ]
+[; ;tone_generator.c: 13:     unsigned char duty_cycle = (2 * (period_value + 1)) + 0.5;
+[v _duty_cycle `uc ~T0 @X0 1 a ]
+[e = _duty_cycle -> + -> * -> 2 `i + -> _period_value `i -> 1 `i `d .0.5 `uc ]
 "14
-[; ;tone_generator.c: 14:     unsigned int duty_cycle_l;
-[v _duty_cycle_l `ui ~T0 @X0 1 a ]
+[; ;tone_generator.c: 14:     unsigned char duty_cycle_l;
+[v _duty_cycle_l `uc ~T0 @X0 1 a ]
 "16
 [; ;tone_generator.c: 16:     unsigned mask;
 [v _mask `ui ~T0 @X0 1 a ]
@@ -2282,7 +2282,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _mask -> - << -> 1 `i -> 2 `i -> 1 `i `ui ]
 "18
 [; ;tone_generator.c: 18:     duty_cycle_l = duty_cycle & mask;
-[e = _duty_cycle_l & _duty_cycle _mask ]
+[e = _duty_cycle_l -> & -> _duty_cycle `ui _mask `uc ]
 "20
 [; ;tone_generator.c: 20:     TRISCbits.TRISC2 = 1;
 [e = . . _TRISCbits 0 2 -> -> 1 `i `uc ]
@@ -2291,13 +2291,13 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _PWM5CON -> -> 0 `i `uc ]
 "22
 [; ;tone_generator.c: 22:     T2PR = period_value;
-[e = _T2PR -> _period_value `uc ]
+[e = _T2PR _period_value ]
 "23
 [; ;tone_generator.c: 23:     PWM5DCLbits.DC = duty_cycle_l;
-[e = . . _PWM5DCLbits 0 1 -> _duty_cycle_l `uc ]
+[e = . . _PWM5DCLbits 0 1 _duty_cycle_l ]
 "24
 [; ;tone_generator.c: 24:     PWM5DCHbits.DC = duty_cycle >> 2;
-[e = . . _PWM5DCHbits 0 0 -> >> _duty_cycle -> 2 `i `uc ]
+[e = . . _PWM5DCHbits 0 0 -> >> -> _duty_cycle `i -> 2 `i `uc ]
 "26
 [; ;tone_generator.c: 26:     PIR4bits.TMR2IF = 0;
 [e = . . _PIR4bits 0 2 -> -> 0 `i `uc ]
@@ -2310,61 +2310,61 @@ Version 4.0 HI-TECH Software Intermediate Code
 "29
 [; ;tone_generator.c: 29:     T2CONbits.ON = 1;
 [e = . . _T2CONbits 0 2 -> -> 1 `i `uc ]
-"33
-[; ;tone_generator.c: 33:     while(!PIR4bits.TMR2IF);
+"31
+[; ;tone_generator.c: 31:     while(!PIR4bits.TMR2IF);
 [e $U 2133  ]
 [e :U 2134 ]
 [e :U 2133 ]
 [e $ ! != -> . . _PIR4bits 0 2 `i -> 0 `i 2134  ]
 [e :U 2135 ]
-"37
-[; ;tone_generator.c: 37: }
+"32
+[; ;tone_generator.c: 32: }
 [e :UE 2132 ]
 }
-"39
-[; ;tone_generator.c: 39: void deinitialize_tone_generator() {
+"34
+[; ;tone_generator.c: 34: void deinitialize_tone_generator() {
 [v _deinitialize_tone_generator `(v ~T0 @X0 1 ef ]
 {
 [e :U _deinitialize_tone_generator ]
 [f ]
-"40
-[; ;tone_generator.c: 40:     PWM5CON = 0;
+"35
+[; ;tone_generator.c: 35:     PWM5CON = 0;
 [e = _PWM5CON -> -> 0 `i `uc ]
-"41
-[; ;tone_generator.c: 41:     T2CONbits.ON = 0;
+"36
+[; ;tone_generator.c: 36:     T2CONbits.ON = 0;
 [e = . . _T2CONbits 0 2 -> -> 0 `i `uc ]
-"42
-[; ;tone_generator.c: 42: }
+"37
+[; ;tone_generator.c: 37: }
 [e :UE 2136 ]
 }
-"44
-[; ;tone_generator.c: 44: void tone_enable(_Bool tone_active) {
+"39
+[; ;tone_generator.c: 39: void tone_enable(_Bool tone_active) {
 [v _tone_enable `(v ~T0 @X0 1 ef1`a ]
 {
 [e :U _tone_enable ]
 [v _tone_active `a ~T0 @X0 1 r1 ]
 [f ]
-"45
-[; ;tone_generator.c: 45:     if (tone_active) {
+"40
+[; ;tone_generator.c: 40:     if (tone_active) {
 [e $ ! != -> _tone_active `i -> 0 `i 2138  ]
 {
-"46
-[; ;tone_generator.c: 46:         PWM5CONbits.EN = 1;
+"41
+[; ;tone_generator.c: 41:         PWM5CONbits.EN = 1;
 [e = . . _PWM5CONbits 0 4 -> -> 1 `i `uc ]
-"47
-[; ;tone_generator.c: 47:     } else {
+"42
+[; ;tone_generator.c: 42:     } else {
 }
 [e $U 2139  ]
 [e :U 2138 ]
 {
-"48
-[; ;tone_generator.c: 48:         PWM5CONbits.EN = 0;
+"43
+[; ;tone_generator.c: 43:         PWM5CONbits.EN = 0;
 [e = . . _PWM5CONbits 0 4 -> -> 0 `i `uc ]
-"49
-[; ;tone_generator.c: 49:     }
+"44
+[; ;tone_generator.c: 44:     }
 }
 [e :U 2139 ]
-"50
-[; ;tone_generator.c: 50: }
+"45
+[; ;tone_generator.c: 45: }
 [e :UE 2137 ]
 }

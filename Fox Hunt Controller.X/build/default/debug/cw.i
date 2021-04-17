@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "cw.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
+# 1 "cw.c" 2
 
 
 
@@ -14,58 +14,10 @@
 
 
 
-# 1 "./config.h" 1
-# 14 "./config.h"
-#pragma config FEXTOSC = OFF
-#pragma config RSTOSC = LFINTOSC
-
-
-#pragma config CLKOUTEN = OFF
-#pragma config PR1WAY = ON
-#pragma config CSWEN = ON
-#pragma config FCMEN = ON
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTS = PWRT_OFF
-#pragma config MVECEN = ON
-#pragma config IVT1WAY = ON
-#pragma config LPBOREN = OFF
-#pragma config BOREN = SBORDIS
-
-
-#pragma config BORV = VBOR_2P45
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-#pragma config DEBUG = OFF
-#pragma config XINST = OFF
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-
-
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config BBSIZE = BBSIZE_512
-#pragma config BBEN = OFF
-#pragma config SAFEN = OFF
-#pragma config WRTAPP = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-#pragma config WRTD = OFF
-#pragma config WRTSAF = OFF
-#pragma config LVP = OFF
-
-
-#pragma config CP = OFF
-# 8 "main.c" 2
-
+# 1 "./cw.h" 1
+# 13 "./cw.h"
+# 1 "./tone_generator.h" 1
+# 11 "./tone_generator.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -25648,12 +25600,8 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 9 "main.c" 2
+# 11 "./tone_generator.h" 2
 
-# 1 "./cw.h" 1
-# 13 "./cw.h"
-# 1 "./tone_generator.h" 1
-# 12 "./tone_generator.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
 # 12 "./tone_generator.h" 2
 
@@ -25691,126 +25639,175 @@ void dit(void);
 void ditspace(void);
 
 void dahspace(void);
-# 10 "main.c" 2
-# 20 "main.c"
-_Bool fox_hunt, transmit_change, transmit;
-
-void end_foxhunt(void);
-void cycle_transmitter(void);
-void initialize_interrupts(void);
-void initialize_pins(void);
-void configure_timer(void);
-
-void main(void) {
-    initialize_pins();
-    initialize_interrupts();
-    configure_timer();
+# 8 "cw.c" 2
 
 
-    while(1) {
+void initialize_cw() {
+    MD1CON1bits.CHSYNC = 0;
+    MD1CON1bits.CLSYNC = 0;
+    MD1CARHbits.CH = 0b01000;
+    MD1SRCbits.MD1MS = 0b00001;
+    RC4PPS = 0b101000;
+    MD1CON0bits.EN = 1;
+    T4CLKbits.T4CS0 = 1;
+    T4CONbits.CKPS = 0b110;
+    T4PRbits.PR4 = 0x7;
+    T4HLTbits.MODE = 0b01000;
 
-        CPUDOZEbits.DOZE = 0b011;
-        CPUDOZEbits.DOZEN = 1;
-        while(!PORTBbits.RB1);
-        while(PORTBbits.RB1);
-        CPUDOZEbits.DOZEN = 0;
+    tone_enable(1);
+}
 
-        initialize_tone_generator(31000UL, 550);
-        initialize_cw();
-        fox_hunt = 1;
-        transmit_change = 1;
-        transmit = 1;
-        PORTBbits.RB2 = 1;
-        _delay((unsigned long)((500)*(31000UL/4000.0)));
+void deinitialize_cw() {
+    MD1CON0bits.EN = 0;
+    tone_enable(0);
+}
 
-        cw_message("Good luck", 9);
-        deinitialize_cw();
-
-
-        while(fox_hunt) {
-
-            cycle_transmitter();
-
-
-            end_foxhunt();
-        }
+void cw_message(char message[], size_t message_size) {
+    for (int i = 0; i < message_size; i++) {
+        cw(message[i]);
     }
+    dahspace(); dahspace();
 }
 
-void initialize_pins(void) {
-    ANSELB = 0x00;
-    TRISBbits.TRISB0 = 1;
-    TRISBbits.TRISB1 = 0;
-    TRISCbits.TRISC4 = 0;
-    PORTBbits.RB2 = 0;
+void cw(char character) {
+  switch(character){
+
+
+    case 'A': case 'a':
+        dit(); ditspace(); dah(); dahspace(); break;
+    case 'B': case 'b':
+        dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case 'C': case 'c':
+        dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case 'D': case 'd':
+        dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case 'E': case 'e':
+        dit(); dahspace(); break;
+    case 'F': case 'f':
+        dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case 'G': case 'g':
+        dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case 'H': case 'h':
+        dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case 'I': case 'i':
+        dit(); ditspace(); dit(); dahspace(); break;
+    case 'J': case 'j':
+        dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case 'K': case 'k':
+        dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case 'L': case 'l':
+        dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case 'M': case 'm':
+        dah(); ditspace(); dah(); dahspace(); break;
+    case 'N': case 'n':
+        dah(); ditspace(); dit(); dahspace(); break;
+    case 'O': case 'o':
+        dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case 'P': case 'p':
+        dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case 'Q': case 'q':
+        dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case 'R': case 'r':
+        dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case 'S': case 's':
+        dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case 'T': case 't':
+        dah(); dahspace(); break;
+    case 'U': case 'u':
+        dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case 'V': case 'v':
+        dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case 'W': case 'w':
+        dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case 'X': case 'x':
+        dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case 'Y': case 'y':
+        dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case 'Z': case 'z':
+        dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+
+
+    case '1':
+        dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case '2':
+        dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case '3':
+        dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case '4':
+        dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case '5':
+        dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case '6':
+        dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case '7':
+        dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case '8':
+        dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case '9':
+        dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case '0':
+        dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+
+
+    case '.':
+        dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case ',':
+        dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case '?':
+        dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case ':':
+        dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case '/':
+        dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case '-':
+        dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case '=':
+        dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case '\'':
+        dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case '(': case ')':
+        dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case '_':
+        dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case '!':
+        dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dah(); dahspace(); break;
+    case '&':
+        dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dit(); dahspace(); break;
+    case '\"':
+        dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case ';':
+        dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); dahspace(); break;
+    case '$':
+        dit(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); ditspace(); dit(); ditspace(); dit(); ditspace(); dah(); dahspace(); break;
+    case ' ':
+        dahspace(); dahspace();
+        break;
+
+
+    default:
+        dahspace(); dahspace();
+  }
 }
 
-void initialize_interrupts(void) {
-    INTCON0bits.IPEN = 0;
-    INTCON0bits.GIE = 1;
-    PIE4bits.TMR1IE = 1;
-    TMR1IF = 0;
+void dah() {
+    MD1CON0bits.BIT = 1;
+    dahspace();
+    MD1CON0bits.BIT = 0;
 }
 
-void configure_timer(void) {
-    T1CONbits.CKPS = 0b11;
-    T1CLKbits.CS = 0b0001;
-    T1GCONbits.GE = 0;
+void dit() {
+    MD1CON0bits.BIT = 1;
+    ditspace();
+    MD1CON0bits.BIT = 0;
 }
 
-void cycle_transmitter(void) {
-    if (transmit_change) {
-        T1CONbits.ON = 0;
-        if (transmit) {
-            PORTBbits.RB2 = 1;
-        } else {
-            initialize_cw();
-            cw_message("N0MCW", sizeof("N0MCW"));
-            _delay((unsigned long)((500)*(31000UL/4000.0)));
-            PORTBbits.RB2 = 0;
-            deinitialize_cw();
-        }
-        transmit_change = 0;
-        TMR1H = 0x1C;
-        TMR1L = 0xF2;
-        T1CONbits.ON = 1;
+void ditspace() {
+    T4CONbits.ON = 1;
+    while(T4CONbits.ON);
+}
+
+void dahspace() {
+    for (int i = 0; i < 3; i++) {
+        ditspace();
     }
-}
-
-
-void end_foxhunt(void) {
-    if (PORTBbits.RB1) {
-        while(PORTBbits.RB1);
-        PORTBbits.RB2 = 1;
-        _delay((unsigned long)((500)*(31000UL/4000.0)));
-        initialize_cw();
-        cw_message("OK ", 2);
-        cw_message("N0MCW", sizeof("N0MCW"));
-        deinitialize_cw();
-        deinitialize_tone_generator();
-        _delay((unsigned long)((500)*(31000UL/4000.0)));
-        PORTBbits.RB2 = 0;
-        fox_hunt = 0;
-    }
-}
-
-void __attribute__((picinterrupt(("irq(TMR1), high_priority")))) TMR1_ISR(void) {
-    TMR1IF = 0;
-    transmit_change = 1;
-    transmit = !transmit;
-}
-
-
-void __attribute__((picinterrupt(("irq(default), low_priority")))) DEFAULT_ISR(void) {
-
-    PIR1 = 0;
-    PIR2 = 0;
-    PIR3 = 0;
-    PIR4 &= ~(0b11111110);
-    PIR5 = 0;
-    PIR6 = 0;
-    PIR7 = 0;
-    PIR8 = 0;
-    PIR9 = 0;
-    PIR10 = 0;
 }

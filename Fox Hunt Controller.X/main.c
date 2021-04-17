@@ -3,6 +3,10 @@
  * Author: Macon Williams
  *
  * Created on March 22, 2021, 3:29 PM
+ * 
+ * This project interfaces a PIC18F27K42 with a Baofeng radio for the purposes
+ * of creating a "fox" for "foxhunting." See the schematic diagram for wiring
+ * information.
  */
 
 #include "config.h"
@@ -11,8 +15,8 @@
 
 #define _XTAL_FREQ              31000UL         // Frequency of the low speed internal oscillator (31 kHz)
 
-#define COS_STATUS              PORTAbits.RA0   // Carrier Operated Switch from Radio
-#define PTT_PIN                 PORTAbits.RA1   // Raise high to turn on PTT
+#define COS_STATUS              PORTBbits.RB1   // Carrier Operated Switch from Radio
+#define PTT_PIN                 PORTBbits.RB2   // Raise high to turn on PTT
 
 #define CALLSIGN                "N0MCW"         // Amateur radio callsign here
 #define TONE_FREQUENCY          550             // CW Tone frequency in Hz
@@ -62,9 +66,9 @@ void main(void) {
 }
 
 void initialize_pins(void) {
-    ANSELA              = 0x00;     // Disable analog inputs on PORTA
-    TRISAbits.TRISA0    = 1;        // Set RA0 to digital input, COS in
-    TRISAbits.TRISA1    = 0;        // Set RA1 to digital output, PTT out
+    ANSELB              = 0x00;     // Disable analog inputs on PORTB
+    TRISBbits.TRISB0    = 1;        // Set RB0 to digital input, COS in
+    TRISBbits.TRISB1    = 0;        // Set RB1 to digital output, PTT out
     TRISCbits.TRISC4    = 0;        // Set RC4 to digital output, CW out
     PTT_PIN             = 0;        // Start with PTT_PIN grounded
 }
@@ -126,9 +130,7 @@ void __interrupt(irq(TMR1), high_priority) TMR1_ISR(void) {
 
 // Discard all other interrupts
 void __interrupt(irq(default), low_priority) DEFAULT_ISR(void) {
-    // Unhandled interrupts go here...
-    
-    // What the heck do I do with them? Is there a general clear all?
+    // Clear any other interrupts. This code will never run, but exists to suppress compiler warnings.
     PIR1                = 0;
     PIR2                = 0;
     PIR3                = 0;

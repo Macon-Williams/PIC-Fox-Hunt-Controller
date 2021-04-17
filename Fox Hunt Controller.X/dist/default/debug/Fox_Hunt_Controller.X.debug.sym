@@ -446,9 +446,9 @@ text16 2016 3A6D CODE 2016 0
 text22 3A70 3AD5 CODE 3A70 0
 text23 3AD8 3B9D CODE 3AD8 0
 %locals
-dist/default/production\Fox_Hunt_Controller.X.production.o
+dist/default/debug\Fox_Hunt_Controller.X.debug.o
 C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\pic\include\proc\pic18f27k42.h
-C:\Users\willi\AppData\Local\Temp\xcAshpg.s
+C:\Users\willi\AppData\Local\Temp\xcAscds.s
 4549 3AFA 0 CODE 0
 4551 3AFA 0 CODE 0
 4554 3AFA 0 CODE 0

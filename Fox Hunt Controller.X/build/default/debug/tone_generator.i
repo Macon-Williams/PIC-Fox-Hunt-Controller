@@ -1,4 +1,4 @@
-# 1 "main.c"
+# 1 "tone_generator.c"
 # 1 "<built-in>" 1
 # 1 "<built-in>" 3
 # 288 "<built-in>" 3
@@ -6,7 +6,7 @@
 # 1 "<built-in>" 2
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
-# 1 "main.c" 2
+# 1 "tone_generator.c" 2
 
 
 
@@ -14,58 +14,9 @@
 
 
 
-# 1 "./config.h" 1
-# 14 "./config.h"
-#pragma config FEXTOSC = OFF
-#pragma config RSTOSC = LFINTOSC
 
-
-#pragma config CLKOUTEN = OFF
-#pragma config PR1WAY = ON
-#pragma config CSWEN = ON
-#pragma config FCMEN = ON
-
-
-#pragma config MCLRE = EXTMCLR
-#pragma config PWRTS = PWRT_OFF
-#pragma config MVECEN = ON
-#pragma config IVT1WAY = ON
-#pragma config LPBOREN = OFF
-#pragma config BOREN = SBORDIS
-
-
-#pragma config BORV = VBOR_2P45
-#pragma config ZCD = OFF
-#pragma config PPS1WAY = ON
-#pragma config STVREN = ON
-#pragma config DEBUG = OFF
-#pragma config XINST = OFF
-
-
-#pragma config WDTCPS = WDTCPS_31
-#pragma config WDTE = OFF
-
-
-#pragma config WDTCWS = WDTCWS_7
-#pragma config WDTCCS = SC
-
-
-#pragma config BBSIZE = BBSIZE_512
-#pragma config BBEN = OFF
-#pragma config SAFEN = OFF
-#pragma config WRTAPP = OFF
-
-
-#pragma config WRTB = OFF
-#pragma config WRTC = OFF
-#pragma config WRTD = OFF
-#pragma config WRTSAF = OFF
-#pragma config LVP = OFF
-
-
-#pragma config CP = OFF
-# 8 "main.c" 2
-
+# 1 "./tone_generator.h" 1
+# 11 "./tone_generator.h"
 # 1 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 1 3
 # 18 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -25648,12 +25599,8 @@ extern __attribute__((nonreentrant)) void _delaywdt(unsigned long);
 #pragma intrinsic(_delay3)
 extern __attribute__((nonreentrant)) void _delay3(unsigned char);
 # 33 "C:/Program Files/Microchip/MPLABX/v5.45/packs/Microchip/PIC18F-K_DFP/1.4.87/xc8\\pic\\include\\xc.h" 2 3
-# 9 "main.c" 2
+# 11 "./tone_generator.h" 2
 
-# 1 "./cw.h" 1
-# 13 "./cw.h"
-# 1 "./tone_generator.h" 1
-# 12 "./tone_generator.h"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stdbool.h" 1 3
 # 12 "./tone_generator.h" 2
 
@@ -25663,154 +25610,41 @@ void initialize_tone_generator(float osc_freq, float pwm_freq);
 void deinitialize_tone_generator(void);
 
 void tone_enable(_Bool tone_active);
-# 13 "./cw.h" 2
-
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stddef.h" 1 3
-# 19 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stddef.h" 3
-# 1 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 1 3
-# 132 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\bits/alltypes.h" 3
-typedef long ptrdiff_t;
-# 19 "C:\\Program Files\\Microchip\\xc8\\v2.32\\pic\\include\\c99\\stddef.h" 2 3
-# 14 "./cw.h" 2
+# 9 "tone_generator.c" 2
 
 
-int dit_length;
+void initialize_tone_generator(float osc_freq, float pwm_freq) {
+    unsigned char period_value = (((1/pwm_freq) * osc_freq)/4) - 0.5;
+    unsigned char duty_cycle = (2 * (period_value + 1)) + 0.5;
+    unsigned char duty_cycle_l;
 
-void initialize_cw(void);
+    unsigned mask;
+    mask = (1 << 2) - 1;
+    duty_cycle_l = duty_cycle & mask;
 
-void deinitialize_cw(void);
+    TRISCbits.TRISC2 = 1;
+    PWM5CON = 0x00;
+    T2PR = period_value;
+    PWM5DCLbits.DC = duty_cycle_l;
+    PWM5DCHbits.DC = duty_cycle >> 2;
 
-void cw_message(char callsign[], size_t message_size);
+    PIR4bits.TMR2IF = 0;
+    T2CLKbits.CS0 = 1;
+    T2CONbits.CKPS = 0b000;
+    T2CONbits.ON = 1;
 
-void cw(char character);
+    while(!PIR4bits.TMR2IF);
+}
 
-void dah(void);
+void deinitialize_tone_generator() {
+    PWM5CON = 0;
+    T2CONbits.ON = 0;
+}
 
-void dit(void);
-
-void ditspace(void);
-
-void dahspace(void);
-# 10 "main.c" 2
-# 20 "main.c"
-_Bool fox_hunt, transmit_change, transmit;
-
-void end_foxhunt(void);
-void cycle_transmitter(void);
-void initialize_interrupts(void);
-void initialize_pins(void);
-void configure_timer(void);
-
-void main(void) {
-    initialize_pins();
-    initialize_interrupts();
-    configure_timer();
-
-
-    while(1) {
-
-        CPUDOZEbits.DOZE = 0b011;
-        CPUDOZEbits.DOZEN = 1;
-        while(!PORTBbits.RB1);
-        while(PORTBbits.RB1);
-        CPUDOZEbits.DOZEN = 0;
-
-        initialize_tone_generator(31000UL, 550);
-        initialize_cw();
-        fox_hunt = 1;
-        transmit_change = 1;
-        transmit = 1;
-        PORTBbits.RB2 = 1;
-        _delay((unsigned long)((500)*(31000UL/4000.0)));
-
-        cw_message("Good luck", 9);
-        deinitialize_cw();
-
-
-        while(fox_hunt) {
-
-            cycle_transmitter();
-
-
-            end_foxhunt();
-        }
+void tone_enable(_Bool tone_active) {
+    if (tone_active) {
+        PWM5CONbits.EN = 1;
+    } else {
+        PWM5CONbits.EN = 0;
     }
-}
-
-void initialize_pins(void) {
-    ANSELB = 0x00;
-    TRISBbits.TRISB0 = 1;
-    TRISBbits.TRISB1 = 0;
-    TRISCbits.TRISC4 = 0;
-    PORTBbits.RB2 = 0;
-}
-
-void initialize_interrupts(void) {
-    INTCON0bits.IPEN = 0;
-    INTCON0bits.GIE = 1;
-    PIE4bits.TMR1IE = 1;
-    TMR1IF = 0;
-}
-
-void configure_timer(void) {
-    T1CONbits.CKPS = 0b11;
-    T1CLKbits.CS = 0b0001;
-    T1GCONbits.GE = 0;
-}
-
-void cycle_transmitter(void) {
-    if (transmit_change) {
-        T1CONbits.ON = 0;
-        if (transmit) {
-            PORTBbits.RB2 = 1;
-        } else {
-            initialize_cw();
-            cw_message("N0MCW", sizeof("N0MCW"));
-            _delay((unsigned long)((500)*(31000UL/4000.0)));
-            PORTBbits.RB2 = 0;
-            deinitialize_cw();
-        }
-        transmit_change = 0;
-        TMR1H = 0x1C;
-        TMR1L = 0xF2;
-        T1CONbits.ON = 1;
-    }
-}
-
-
-void end_foxhunt(void) {
-    if (PORTBbits.RB1) {
-        while(PORTBbits.RB1);
-        PORTBbits.RB2 = 1;
-        _delay((unsigned long)((500)*(31000UL/4000.0)));
-        initialize_cw();
-        cw_message("OK ", 2);
-        cw_message("N0MCW", sizeof("N0MCW"));
-        deinitialize_cw();
-        deinitialize_tone_generator();
-        _delay((unsigned long)((500)*(31000UL/4000.0)));
-        PORTBbits.RB2 = 0;
-        fox_hunt = 0;
-    }
-}
-
-void __attribute__((picinterrupt(("irq(TMR1), high_priority")))) TMR1_ISR(void) {
-    TMR1IF = 0;
-    transmit_change = 1;
-    transmit = !transmit;
-}
-
-
-void __attribute__((picinterrupt(("irq(default), low_priority")))) DEFAULT_ISR(void) {
-
-    PIR1 = 0;
-    PIR2 = 0;
-    PIR3 = 0;
-    PIR4 &= ~(0b11111110);
-    PIR5 = 0;
-    PIR6 = 0;
-    PIR7 = 0;
-    PIR8 = 0;
-    PIR9 = 0;
-    PIR10 = 0;
 }
